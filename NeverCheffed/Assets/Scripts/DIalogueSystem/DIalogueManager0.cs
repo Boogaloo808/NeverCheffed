@@ -10,6 +10,10 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
+    public Animator animator;
+    public Animator Ayanimator;
+
+
     private Queue<string> sentences;
 
 
@@ -22,6 +26,9 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        animator.SetBool("isOpen", true);
+        Ayanimator.SetBool("isActive", true);
+
         nameText.text = dialogue.name;
 
         sentences.Clear();
@@ -44,11 +51,28 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        Ayanimator.SetBool("startsTalking", true);
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            Ayanimator.SetBool("isTalking", true);
+            dialogueText.text += letter;
+            yield return null;
+            Ayanimator.SetBool("isTalking", false);
+
+        }
+        Ayanimator.SetBool("startsTalking", false);
     }
 
     void EndDialogue()
     {
-        Debug.Log("stopped talking");
+        animator.SetBool("isOpen", false);
+        Ayanimator.SetBool("isActive", false);
     }
 }
