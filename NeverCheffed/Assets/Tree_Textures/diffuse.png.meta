@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8ae92f31a710d5e489a85004b57ee615
+guid: 6eaf3848875b6d74282fdf2c7fffa445
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6408416221737640562
-    second: star quarter_0
+      213: 8410411883959372341
+    second: diffuse_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: star quarter_0
+      name: diffuse_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 56
-        width: 152
-        height: 157
+        x: 0
+        y: 0
+        width: 64
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 272e585b9944fe850800000000000000
-      internalID: 6408416221737640562
+      spriteID: 53a4f165c09c7b470800000000000000
+      internalID: 8410411883959372341
       vertices: []
       indices: 
       edges: []
@@ -133,7 +133,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      star quarter_0: 6408416221737640562
+      diffuse_0: 8410411883959372341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

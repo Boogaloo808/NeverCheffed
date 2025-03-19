@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bacon in Bag_0: 142081348130898699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
