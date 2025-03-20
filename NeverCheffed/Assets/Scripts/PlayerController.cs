@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     float walkSpeed;
     float inputHorizontal;
     public bool activated = false;
-    public GameObject fallingFoodSpawn;
     FoodList FoodList;
 
     void Start()

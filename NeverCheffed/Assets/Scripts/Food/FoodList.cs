@@ -8,7 +8,8 @@ public class FoodList : MonoBehaviour
     public GameObject[] ingredients;
     public GameObject[] dishes;
 
-    public List<GameObject> ingredientsList;
+    public List<GameObject> rooms;
+
 
     void Start()
     {
