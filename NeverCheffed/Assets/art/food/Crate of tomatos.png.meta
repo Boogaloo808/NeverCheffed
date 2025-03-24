@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Crate of tomatos_0: 9065184355264430308
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

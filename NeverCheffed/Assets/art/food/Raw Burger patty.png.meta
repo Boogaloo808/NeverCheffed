@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Raw Burger patty_0: 864898794722708340
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

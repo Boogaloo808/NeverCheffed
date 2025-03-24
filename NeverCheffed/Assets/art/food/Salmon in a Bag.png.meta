@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Salmon in a Bag_0: 7882758184617116025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

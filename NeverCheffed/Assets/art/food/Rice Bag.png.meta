@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rice Bag_0: 9154064971199426641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

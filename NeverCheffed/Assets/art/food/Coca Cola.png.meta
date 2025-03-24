@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Coca Cola_0: 6112100379578615961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

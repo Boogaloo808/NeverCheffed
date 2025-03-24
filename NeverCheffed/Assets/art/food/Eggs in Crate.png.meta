@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eggs in Crate_0: -3478765665280523286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

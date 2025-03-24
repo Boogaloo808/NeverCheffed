@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pepper(Remake)_0: -6439558046373658248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

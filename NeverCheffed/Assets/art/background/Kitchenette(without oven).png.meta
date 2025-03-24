@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kitchenette(without oven)_0: -7370053791979700469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

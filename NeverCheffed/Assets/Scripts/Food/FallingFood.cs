@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.WSA;
 
@@ -6,8 +8,10 @@ public class FallingFood : MonoBehaviour
     FoodList foodlist;
     PlayerController player;
     private int rand;
+    bool wait;
+    public Collider2D roomCollider;
 
-
+    bool playerInRoom = false;
     public bool spawned = false;
 
     void Start()
@@ -18,12 +22,22 @@ public class FallingFood : MonoBehaviour
 
     void Spawn()
     {
-                rand = Random.Range(0, foodlist.ingredients.Length);
-                Instantiate(foodlist.ingredients[rand], transform.position, foodlist.ingredients[rand].transform.rotation);
+        wait = true;
+        StartCoroutine("SpawnTime", 0);
     }
     void Update()
     {
-        if ((player.activated) && (spawned == false))
-            Invoke("Spawn", 0.1f);
+        
+
+        if ((player.activated) && (spawned == false) && !wait)
+            Invoke("Spawn", 0f);
     } 
+
+    IEnumerator SpawnTime(float seconds)
+    {
+        rand = Random.Range(0, foodlist.ingredients.Length);
+        Instantiate(foodlist.ingredients[rand], transform.position + Vector3.right * Random.Range(-10, 10f), foodlist.ingredients[rand].transform.rotation);
+        yield return new WaitForSeconds(0.6f);
+        wait = false;
+    }
 }
