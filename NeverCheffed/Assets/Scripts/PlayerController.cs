@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
+    cameraManager cam;
 
     float walkSpeed;
     float inputHorizontal;
@@ -14,7 +15,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        walkSpeed = 5f;
+        cam = FindAnyObjectByType<cameraManager>();
+        walkSpeed = 7f;
 
         FoodList = GetComponent<FoodList>();
     }
@@ -33,6 +35,31 @@ public class PlayerController : MonoBehaviour
         {
             activated = false;
             Debug.Log(activated);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.gameObject.name)
+        {
+            case "kitchenWall":
+                if (rb.velocity.x > 0.01f)
+                {
+                    cam.CookZoom(5);
+                }
+                if (rb.velocity.x < -0.01f)
+                {
+                    cam.CookZoom(5);
+                }
+                break;
+            case "rightRoomWall":
+                cam.RoomZoom(30, 10);
+                break;
+            case "leftRoomWall":
+                cam.RoomZoom(-32, 10);
+                break;
+            default:
+                break;
         }
     }
 }
