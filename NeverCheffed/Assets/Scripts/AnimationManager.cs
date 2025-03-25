@@ -9,6 +9,7 @@ public class AnimationManager : MonoBehaviour
     {
         animator.SetBool("walkingR", false);
         animator.SetBool("walkingL", false);
+        animator.SetBool("facing direction", true);
     }
 
     public void Update()
@@ -20,6 +21,7 @@ public class AnimationManager : MonoBehaviour
         {
             transform.localScale = new Vector3(2.3f, 2.3f, 2.3f);
             animator.SetBool("walkingR", true);
+            animator.SetBool("facing direction", true);
             Debug.Log("walking Right");
         }
         else
@@ -32,6 +34,7 @@ public class AnimationManager : MonoBehaviour
         {
             transform.localScale = new Vector3(-2.3f, 2.3f, 2.3f);
             animator.SetBool("walkingL", true);
+            animator.SetBool("facing direction", false);
             Debug.Log("walking Left");
         }
         else
