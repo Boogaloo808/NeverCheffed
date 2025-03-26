@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 261409254}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 1367559054}
   m_Layer: 0
   m_Name: Food List
-  m_TagString: Food
+  m_TagString: list of food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -817,9 +817,10 @@ GameObject:
   - component: {fileID: 1463094724}
   - component: {fileID: 1463094723}
   - component: {fileID: 1463094722}
+  - component: {fileID: 1463094726}
   m_Layer: 0
   m_Name: Pan
-  m_TagString: Untagged
+  m_TagString: Pan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1078,6 +1079,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 6.9144173}
   m_EdgeRadius: 0
+--- !u!114 &1463094726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463094715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f696b589ccd4f8949908d1b2e6dbc3d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodInPan: []
 --- !u!1 &1698017014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e313118c140a92543a6fd3995b401b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   activated: 0
 --- !u!1 &1704935267
 GameObject:
@@ -1354,7 +1369,7 @@ GameObject:
   - component: {fileID: 2114158019}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: SpawnZone1
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

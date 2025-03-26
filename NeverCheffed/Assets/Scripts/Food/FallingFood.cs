@@ -18,7 +18,7 @@ public class FallingFood : MonoBehaviour
 
     void Start()
     {
-        foodlist = GameObject.FindGameObjectWithTag("Food").GetComponent<FoodList>();
+        foodlist = GameObject.FindGameObjectWithTag("list of food").GetComponent<FoodList>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
@@ -30,10 +30,18 @@ public class FallingFood : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            if (collision.gameObject.tag == "Player")
+            if (collision.gameObject.CompareTag("Player"))
             {
                 playerInRoom = true;
             }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerInRoom = false;
+        }
     }
 
     void Update()
