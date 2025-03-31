@@ -11,6 +11,8 @@ TagManager:
   - list of food
   - Pan
   - anchor
+  - FFT
+  - GameManager
   layers:
   - Default
   - TransparentFX
