@@ -11,6 +11,7 @@ TagManager:
   - list of food
   - Pan
   - anchor
+  - CuttingBoard
   layers:
   - Default
   - TransparentFX

@@ -85,6 +85,7 @@ public class anchorMotor : MonoBehaviour
                 if (number <= 0)
                 {
                     Debug.Log("YIPPIEEEEEEEEE");
+                    StartCoroutine(nameof(DotFade));
                 }
             }
             else
@@ -95,10 +96,35 @@ public class anchorMotor : MonoBehaviour
                 if (tries <= 0)
                 {
                     Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+                    StartCoroutine(nameof(DotFade));
+
                 }
                 Debug.Log("you fucked up");
             }
         }
+    }
+
+    IEnumerator DotFade()
+    {
+        float alpha = 1;
+
+        SpriteRenderer[] everything = theWholeThing.GetComponentsInChildren<SpriteRenderer>();
+
+        while (alpha > 0)
+        {
+            alpha -= Time.deltaTime;
+            foreach (var thing in everything)
+            {
+                Color color = thing.color;
+                color.a = alpha;
+                thing.color = color;
+            }
+            Color textColor = text.color;
+            textColor.a = alpha;
+            text.color = textColor;
+            yield return null;
+        }
+        Destroy(theWholeThing.gameObject);
     }
 }
 
