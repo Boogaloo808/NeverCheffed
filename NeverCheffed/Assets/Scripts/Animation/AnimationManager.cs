@@ -1,12 +1,15 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AnimationManager : MonoBehaviour
 {
+    public PlayerController player;
     public Animator animator;
     public Rigidbody2D rb;
 
     private void Start()
     {
+        player = GetComponent<PlayerController>();
         animator.SetBool("walkingR", false);
         animator.SetBool("walkingL", false);
         animator.SetBool("facing direction", true);
@@ -16,6 +19,16 @@ public class AnimationManager : MonoBehaviour
     {
         animator.SetFloat("speed", rb.velocity.magnitude / 5);
         
+        if (player.inputX > 0)
+        {
+            animator.SetBool("right pressed", true);
+            animator.SetBool("left pressed", false);
+        }
+        if (player.inputX < 0)
+        {
+            animator.SetBool("left pressed", true);
+            animator.SetBool("right pressed", false);
+        }
 
         if (rb.velocity.x > 0.05f)
         {

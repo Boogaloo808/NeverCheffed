@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     public float walkSpeed;
     public Vector2 move;
-    private float inputX;
+    public float inputX;
     float inputHorizontal;
     public bool activated = false;
     public bool atCuttingStation = false;
@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
         move.x = inputX;
         if (move == Vector2.zero)
         {
+            Debug.Log("friction");
             rb.velocity *= 0.96f;
         }
         rb.AddForce(move * walkSpeed);
