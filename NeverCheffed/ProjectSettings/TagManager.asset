@@ -3,20 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Food
-  - cameraTrigger
-  - Floor
-  - SpawnZone1
-  - list of food
-  - Pan
-  - anchor
-<<<<<<< HEAD
-  - CuttingBoard
-=======
-  - FFT
-  - GameManager
->>>>>>> 5bb531eaffac99d979f67959b3d643811282ef12
+  tags: []
   layers:
   - Default
   - TransparentFX

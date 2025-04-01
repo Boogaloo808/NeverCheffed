@@ -1345,8 +1345,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e313118c140a92543a6fd3995b401b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 1698017015}
+  cuttingboard: {fileID: 0}
+  walkSpeed: 25
+  move: {x: 0, y: 0}
   activated: 0
+  atCuttingStation: 0
 --- !u!1 &1704935267
 GameObject:
   m_ObjectHideFlags: 0

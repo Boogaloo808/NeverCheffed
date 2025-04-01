@@ -37,6 +37,10 @@ public class PlayerController : MonoBehaviour
         }
         rb.AddForce(move * walkSpeed);
 
+       if (Input.GetKeyDown(KeyCode.Space))
+        {
+            activated = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
