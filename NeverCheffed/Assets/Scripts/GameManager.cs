@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     FoodList FoodList;
     PanScript panScript;
 
-    public GameObject[] eggsAndBacon;
+    public List<String> eggsAndBacon;
     public GameObject _eggsAndBacon;
     public Transform panSlot;
     public PanScript pan;
@@ -25,17 +25,24 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && !Cooked)
         {
             Cooked = true;
-            Invoke("RecipeList", 0f);
-
-            Debug.Log(Cooked);
+            RecipeList(panScript.foodInPan);
         }
     }
 
-    void RecipeList()
+    void RecipeList(List<GameObject> goList)
     {
-        if (eggsAndBacon.SequenceEqual(panScript.foodInPan))
+        List<String> panList = new List<String>();
+
+        for(int i = 0; i < goList.Count; i++)
         {
-            _eggsAndBacon.transform.position  = panSlot.position;
+            panList.Add(goList[i].name);
+        }
+
+
+        if (eggsAndBacon == panList)
+        {
+            Instantiate(_eggsAndBacon, panSlot.transform.position, _eggsAndBacon.transform.rotation);
         }
     }
 }
+    

@@ -22,12 +22,10 @@ public class AnimationManager : MonoBehaviour
             transform.localScale = new Vector3(2.3f, 2.3f, 2.3f);
             animator.SetBool("walkingR", true);
             animator.SetBool("facing direction", true);
-            Debug.Log("walking Right");
         }
         else
         {
             animator.SetBool("walkingR", false);
-            Debug.Log("not walking Right");
         }
 
         if (rb.velocity.x < -0.05f)
@@ -35,12 +33,10 @@ public class AnimationManager : MonoBehaviour
             transform.localScale = new Vector3(-2.3f, 2.3f, 2.3f);
             animator.SetBool("walkingL", true);
             animator.SetBool("facing direction", false);
-            Debug.Log("walking Left");
         }
         else
         {
             animator.SetBool("walkingL", false);
-            Debug.Log("not Walking Left");
         }
 
     }

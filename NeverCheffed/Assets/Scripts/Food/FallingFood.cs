@@ -49,6 +49,10 @@ public class FallingFood : MonoBehaviour
 
         if ((player.activated) && (spawned == false) && !wait && (playerInRoom))
             Invoke("Spawn", 0f);
+        if (player.activated == false)
+        {
+            CancelInvoke("Spawn");
+        }
     } 
 
     IEnumerator SpawnTime(float seconds)
