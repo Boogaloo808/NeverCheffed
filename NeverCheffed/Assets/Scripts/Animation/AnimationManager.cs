@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class AnimationManager : MonoBehaviour
 {
@@ -53,4 +54,15 @@ public class AnimationManager : MonoBehaviour
         }
 
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void LoadLevel(int sceneID)
+    {
+        SceneManager.LoadScene(sceneID);
+    }
+
 }

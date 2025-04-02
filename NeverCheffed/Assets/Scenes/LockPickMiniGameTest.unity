@@ -749,8 +749,8 @@ Transform:
   m_GameObject: {fileID: 1161519208}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.56, y: -0.04, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalPosition: {x: -1.66, y: -0.02, z: 0}
+  m_LocalScale: {x: 0.28, y: 0.28, z: 0.28}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1397229587}
@@ -799,7 +799,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 3675063779354177482, guid: 43197e0442330c7408dabb7921fcedb0, type: 3}
   m_Color: {r: 1, g: 0.75291723, b: 0.023584902, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1125,6 +1125,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 56db5076-6879-413b-b25d-3f64759365cc
+    m_ActionName: 'ChopMG/action[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ac64f2ea-6463-4081-8dc5-7e79438c1a43
+    m_ActionName: 'FryMG/action[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6a84a2bd-16e6-492a-854c-6febb9491d7b
+    m_ActionName: 'cookMG/action[/Mouse/middleButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,12 +9,7 @@ public class EventManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void RestartLevel()
-    {
-        LoadLevel(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    private void LoadLevel(int sceneID)
+    public void LoadLevel(int sceneID)
     {
         SceneManager.LoadScene(sceneID);
     }
