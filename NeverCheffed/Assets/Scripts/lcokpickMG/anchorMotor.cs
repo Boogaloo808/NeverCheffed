@@ -17,6 +17,8 @@ public class anchorMotor : MonoBehaviour
 
     public Transform theWholeThing;
     public SpriteRenderer bg;
+    public AudioSource sound;
+    public AudioClip hit, miss, fail, success;
     Color color = Color.black;
     Vector2 theWholeThingAnchor;
     float shake;
@@ -80,6 +82,8 @@ public class anchorMotor : MonoBehaviour
 
             if (currentDot != null)
             {
+                sound.clip = hit;
+                sound.Play();
                 currentDot.transform.position = Random.insideUnitCircle.normalized * 1.65f;
                 number--;
                 if (number <= 0)
@@ -90,6 +94,8 @@ public class anchorMotor : MonoBehaviour
             }
             else
             {
+                sound.clip = miss;
+                sound.Play();
                 shake = 2;
                 tries--;
                 color = Color.red;

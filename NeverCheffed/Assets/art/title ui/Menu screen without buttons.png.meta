@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: a345c2180ba20aa4aa3d4acb25820821
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 185505682625593226
+    second: Menu screen without buttons_0
+  - first:
+      213: 1895569443896875010
+    second: Menu screen without buttons_1
+  - first:
+      213: -4346104904903489840
+    second: Menu screen without buttons_2
+  - first:
+      213: -1457381267424264037
+    second: Menu screen without buttons_3
+  - first:
+      213: -6946355257532014831
+    second: Menu screen without buttons_4
+  - first:
+      213: -6330876288182927536
+    second: Menu screen without buttons_5
+  - first:
+      213: 5349170817562748397
+    second: Menu screen without buttons_6
+  - first:
+      213: 3267912213290582434
+    second: Menu screen without buttons_7
+  - first:
+      213: -604783384185428476
+    second: Menu screen without buttons_8
+  - first:
+      213: 3328035432359822579
+    second: Menu screen without buttons_9
+  - first:
+      213: 2559040997395844804
+    second: Menu screen without buttons_10
+  - first:
+      213: 6253596577942218194
+    second: Menu screen without buttons_11
+  - first:
+      213: -1014166569750580887
+    second: Menu screen without buttons_12
+  - first:
+      213: -5011728771774401106
+    second: Menu screen without buttons_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Menu screen without buttons_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 346
+        width: 52
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ff6bc7f6c039200800000000000000
+      internalID: 185505682625593226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 395
+        width: 54
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208de86bd5a6e4a10800000000000000
+      internalID: 1895569443896875010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 346
+        width: 49
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d605aa9d988fa3c0800000000000000
+      internalID: -4346104904903489840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 389
+        width: 54
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b904ed4757756cbe0800000000000000
+      internalID: -1457381267424264037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 347
+        width: 115
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f132752b6999f90800000000000000
+      internalID: -6946355257532014831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_5
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 369
+        width: 75
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fb9edee853428a0800000000000000
+      internalID: -6330876288182927536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 347
+        width: 48
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5a6b774821c3a40800000000000000
+      internalID: 5349170817562748397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_7
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 391
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1885608d4f95d20800000000000000
+      internalID: 3267912213290582434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_8
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 343
+        width: 29
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406a19367b06b97f0800000000000000
+      internalID: -604783384185428476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_9
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 370
+        width: 29
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f488b1d79e8f2e20800000000000000
+      internalID: 3328035432359822579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_10
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 345
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cec07f8a3a838320800000000000000
+      internalID: 2559040997395844804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_11
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 374
+        width: 56
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d528d464fc39c650800000000000000
+      internalID: 6253596577942218194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 360
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961b0fac0e4fce1f0800000000000000
+      internalID: -1014166569750580887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu screen without buttons_13
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 9
+        width: 373
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea538cf3c33c27ab0800000000000000
+      internalID: -5011728771774401106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Menu screen without buttons_0: 185505682625593226
+      Menu screen without buttons_1: 1895569443896875010
+      Menu screen without buttons_10: 2559040997395844804
+      Menu screen without buttons_11: 6253596577942218194
+      Menu screen without buttons_12: -1014166569750580887
+      Menu screen without buttons_13: -5011728771774401106
+      Menu screen without buttons_2: -4346104904903489840
+      Menu screen without buttons_3: -1457381267424264037
+      Menu screen without buttons_4: -6946355257532014831
+      Menu screen without buttons_5: -6330876288182927536
+      Menu screen without buttons_6: 5349170817562748397
+      Menu screen without buttons_7: 3267912213290582434
+      Menu screen without buttons_8: -604783384185428476
+      Menu screen without buttons_9: 3328035432359822579
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

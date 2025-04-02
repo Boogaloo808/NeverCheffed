@@ -1126,7 +1126,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 3985c5e76e42a9040a3916fc20837ef3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1193,6 +1193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8556826773acff24694047c8f219ab3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   animator: {fileID: 1629906137}
   rb: {fileID: 1629906140}
 --- !u!61 &1629906142
@@ -1255,8 +1256,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1629906140}
   cuttingboard: {fileID: 1213325510}
+  playerAction: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  minigameAction: {fileID: -944628639613478452, guid: c0e863fa831c334479ad663622ca3d81, type: 3}
+  usingPlayerAction: 1
   walkSpeed: 25
   move: {x: 0, y: 0}
+  inputX: 0
   activated: 0
   atCuttingStation: 0
 --- !u!114 &1629906144
@@ -1539,7 +1544,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8285273084013935958, guid: 2f3a012625639884988ce8d1e528d14e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1574,12 +1579,48 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 677533655139770115, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466976034024208090, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512236232214839445, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954749760908819637, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3054080242660781379, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4682498190614327607, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
       propertyPath: m_Name
       value: lock
       objectReference: {fileID: 0}
     - target: {fileID: 4682498190614327607, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698079707783591265, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698079707783591265, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698079707783591265, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 76621375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698079707783591265, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8798242245935259133, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}

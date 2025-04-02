@@ -9,6 +9,11 @@ public class PlayerController : MonoBehaviour
     cameraManager cam;
     public Transform cuttingboard;
 
+    public InputActionAsset playerAction;
+    public InputActionAsset minigameAction;
+
+    public bool usingPlayerAction = true;
+
     public float walkSpeed;
     public Vector2 move;
     public float inputX;
@@ -88,6 +93,8 @@ public class PlayerController : MonoBehaviour
         if (atCuttingStation)
         {
             rb.transform.SetPositionAndRotation(cuttingboard.position, Quaternion.identity);
+            switchController();
+
         }
     }
 
@@ -103,5 +110,10 @@ public class PlayerController : MonoBehaviour
             Debug.Log("interact");
             activateCutting();
         }
+    }
+
+    public void switchController()
+    {
+
     }
 }
