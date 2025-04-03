@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         cam = FindAnyObjectByType<cameraManager>();
         walkSpeed = 25f;
         move = new Vector2();
-        playerinput.SwitchCurrentActionMap("Player");
+        //playerinput.SwitchCurrentActionMap("Player");
 
         FoodList = GetComponent<FoodList>();
     }

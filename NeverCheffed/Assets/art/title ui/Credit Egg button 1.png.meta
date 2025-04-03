@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Credit Egg button 1_0: -4326719896811555437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

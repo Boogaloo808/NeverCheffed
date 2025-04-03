@@ -6,9 +6,9 @@ public class PanScript : MonoBehaviour
 {
     public List<GameObject> foodInPan;
     public Transform FFT;
-
+    public FoodCount counter;
     public Collider2D panCollider;
-
+    
     public GameManager manager;
 
     void Start()
@@ -16,20 +16,11 @@ public class PanScript : MonoBehaviour
         foodInPan = new List<GameObject>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Food")) collision.gameObject.transform.SetParent(gameObject.transform, true);
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Food")) foodInPan.Add(collision.gameObject);
-    }
+        if (collision.gameObject.CompareTag("Cheese"))
+            counter.CheeseNumber++;
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Food") && manager.Cooked)
-        {
-            Destroy(collision.gameObject);
-        }
+        Debug.Log(true);
     }
 }

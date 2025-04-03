@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Start Bacon button 1_0: 6690233000053215094
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

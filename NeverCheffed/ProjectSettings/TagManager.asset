@@ -6,6 +6,14 @@ TagManager:
   tags:
   - cameraTrigger
   - anchor
+  - FFT
+  - Floor
+  - list of food
+  - Pan
+  - GameManager
+  - SpawnZone1
+  - Food
+  - Cheese
   layers:
   - Default
   - TransparentFX
