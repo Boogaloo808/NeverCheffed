@@ -9,10 +9,12 @@ public class PlayerController : MonoBehaviour
     cameraManager cam;
     public Transform cuttingboard;
 
-    public InputActionAsset playerAction;
-    public InputActionAsset minigameAction;
+    public PlayerInput playerinput;
 
     public bool usingPlayerAction = true;
+    public bool usingChopMap = false;
+    public bool usingcookMap = false;
+    public bool usingfryMap = false;
 
     public float walkSpeed;
     public Vector2 move;
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour
         cam = FindAnyObjectByType<cameraManager>();
         walkSpeed = 25f;
         move = new Vector2();
+        playerinput.SwitchCurrentActionMap("Player");
 
         FoodList = GetComponent<FoodList>();
     }
@@ -114,6 +117,15 @@ public class PlayerController : MonoBehaviour
 
     public void switchController()
     {
-
+        if (usingPlayerAction)
+        {
+            playerinput.SwitchCurrentActionMap("ChopMG");
+            usingPlayerAction = false;
+        }
+        else
+        {
+            playerinput.SwitchCurrentActionMap("Player");
+            usingPlayerAction = true;
+        }
     }
 }

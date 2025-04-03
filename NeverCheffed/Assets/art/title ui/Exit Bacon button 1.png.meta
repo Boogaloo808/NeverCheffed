@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Exit Bacon button 1_0: -6516748872653681692
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -54,6 +54,8 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         Ayanimator.SetBool("startsTalking", true);
         StartCoroutine(TypeSentence(sentence));
+        
+        
     }
 
     IEnumerator TypeSentence (string sentence)
