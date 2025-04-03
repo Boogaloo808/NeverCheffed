@@ -862,7 +862,7 @@ Transform:
   m_GameObject: {fileID: 1200746586}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -67.222565, y: -1.5940871, z: 0.013822956}
+  m_LocalPosition: {x: -67.02, y: -1.47, z: 0.013822956}
   m_LocalScale: {x: 1.7005206, y: 1.8830335, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1604,7 +1604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1629906140}
   cuttingboard: {fileID: 1213325510}
-  playerinput: {fileID: 0}
+  playerinput: {fileID: 1629906144}
   usingPlayerAction: 1
   usingChopMap: 0
   usingcookMap: 0
@@ -1697,10 +1697,6 @@ MonoBehaviour:
     m_ActionName: 'Player/Next[/Keyboard/2]'
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 641cd816-40e6-41b4-8c3d-04687c349290
-    m_ActionName: 'Player/Sprint[/Keyboard/leftShift]'
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: c95b2375-e6d9-4b88-9c4c-c5e76515df4b
     m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
@@ -1751,6 +1747,26 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 6a84a2bd-16e6-492a-854c-6febb9491d7b
     m_ActionName: 'cookMG/action[/Mouse/middleButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e7e13f37-24a7-4529-84f3-9c31da900ca2
+    m_ActionName: 'Player/nextLine[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ebea1fef-3235-4e2a-853a-848e9e2774b2
+    m_ActionName: 'Player/Pause[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 00614a2c-5565-4234-baa1-e2223f7e9bf2
+    m_ActionName: 'ChopMG/back[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3fae9860-c0b7-4146-9232-13d7fab46f13
+    m_ActionName: 'FryMG/back[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8d94b07f-b2e6-43bf-8448-04b30a183544
+    m_ActionName: 'cookMG/back[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

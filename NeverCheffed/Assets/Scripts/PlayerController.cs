@@ -40,7 +40,6 @@ public class PlayerController : MonoBehaviour
         move.x = inputX;
         if (move == Vector2.zero)
         {
-            Debug.Log("friction");
             rb.velocity *= 0.96f;
         }
         rb.AddForce(move * walkSpeed);
