@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public float inputX;
     float inputHorizontal;
     public bool activated = false;
+    public bool inRoom = false;
     public bool atCuttingStation = false;
     FoodList FoodList;
 
@@ -44,9 +45,13 @@ public class PlayerController : MonoBehaviour
         }
         rb.AddForce(move * walkSpeed);
 
-       if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && activated == false && inRoom == true)
         {
             activated = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && activated == true)
+        {
+            activated = false;
         }
     }
 
@@ -126,5 +131,22 @@ public class PlayerController : MonoBehaviour
             playerinput.SwitchCurrentActionMap("Player");
             usingPlayerAction = true;
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("FridgeRoomSpawn"))
+        {
+            inRoom = true;
+        }
+        else if (collision.gameObject.CompareTag("PantryRoomSpawn"))
+        {
+            inRoom = true;
+        }
+        else
+        {
+            inRoom = false;
+        }
+
     }
 }

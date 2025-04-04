@@ -25,4 +25,12 @@ public class FoodScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Pan"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

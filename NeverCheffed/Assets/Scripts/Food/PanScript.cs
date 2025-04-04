@@ -20,7 +20,19 @@ public class PanScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Cheese"))
             counter.CheeseNumber++;
-
-        Debug.Log(true);
+        if (collision.gameObject.CompareTag("Milk"))
+            counter.MilkNumber++;
+        if (collision.gameObject.CompareTag("Meat"))
+            counter.MeatNumber++;
+        if (collision.gameObject.CompareTag("Egg"))
+            counter.EggNumber++;
+        if (collision.gameObject.CompareTag("Rice"))
+            counter.RiceNumber++;
+        if (collision.gameObject.CompareTag("Flour"))
+            counter.FlourNumber++;
+        if (collision.gameObject.CompareTag("Spice"))
+            counter.SpiceNumber++;
+        if (collision.gameObject.CompareTag("Bread"))
+            counter.BreadNumber++;
     }
 }

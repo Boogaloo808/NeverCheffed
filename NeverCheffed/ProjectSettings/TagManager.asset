@@ -11,9 +11,18 @@ TagManager:
   - list of food
   - Pan
   - GameManager
-  - SpawnZone1
   - Food
   - Cheese
+  - Milk
+  - Meat
+  - Egg
+  - Rice
+  - Flour
+  - Spice
+  - Bread
+  - FridgeRoomSpawn
+  - PantryRoomSpawn
+  - SpawnZone1
   layers:
   - Default
   - TransparentFX
