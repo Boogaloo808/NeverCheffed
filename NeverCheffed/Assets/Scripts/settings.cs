@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-public class EventManager : MonoBehaviour
+public class settings : MonoBehaviour
 {
+    [Header("sound settings")]
     [SerializeField] Slider MusicSlider;
     [SerializeField] Slider SoundSlider;
     [SerializeField] AudioMixer musicMixer;
@@ -102,17 +102,5 @@ public class EventManager : MonoBehaviour
             SoundEffect.Pause();
             isSoundPlaying = false;
         }
-    }
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-    public void RestartLevel()
-    {
-        LoadLevel(SceneManager.GetActiveScene().buildIndex);
-    }
-    public void LoadLevel(int sceneID)
-    {
-        SceneManager.LoadScene(sceneID);
     }
 }
