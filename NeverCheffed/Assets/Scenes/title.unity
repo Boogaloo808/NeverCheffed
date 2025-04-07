@@ -145,8 +145,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: e5ee51f704f298c40a9e49aa84ee44d7, type: 2}
-  m_audioClip: {fileID: 8300000, guid: cbc0f47587bffb54396d8a1509627c50, type: 3}
-  m_Resource: {fileID: 8300000, guid: cbc0f47587bffb54396d8a1509627c50, type: 3}
+  m_audioClip: {fileID: 8300000, guid: badfe330e122ca94ca76c25b3681a6c2, type: 3}
+  m_Resource: {fileID: 8300000, guid: badfe330e122ca94ca76c25b3681a6c2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -408,15 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ee349bcc5cb5d44afa420d8bcea316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicSlider: {fileID: 0}
-  SoundSlider: {fileID: 0}
-  musicMixer: {fileID: 0}
-  soundMixer: {fileID: 0}
-  MusVol: {fileID: 0}
-  SonVol: {fileID: 0}
   bgMusic: {fileID: 128840230}
-  SoundEffect: {fileID: 0}
-  isSoundPlaying: 0
 --- !u!4 &385049465
 Transform:
   m_ObjectHideFlags: 0
