@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Storage Room (Remake)_0: 4031032106165953084
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -28,7 +28,7 @@ public class FoodCount : MonoBehaviour
         MeatText.text = MeatNumber + " Meat";
         EggText.text = EggNumber + " Egg";
         RiceText.text = RiceNumber + " Rice";
-        FlourText.text = FlourNumber + " Floud";
+        FlourText.text = FlourNumber + " Flour";
         SpiceText.text = SpiceNumber + " Spice";
         BreadText.text = BreadNumber + " Bread";
     }

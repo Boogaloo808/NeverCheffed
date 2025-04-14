@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8556826773acff24694047c8f219ab3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1629906143}
   animator: {fileID: 1629906137}
   rb: {fileID: 1629906140}
 --- !u!61 &1629906142
