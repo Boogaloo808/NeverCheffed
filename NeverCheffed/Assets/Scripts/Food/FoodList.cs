@@ -8,9 +8,10 @@ public class FoodList : MonoBehaviour
 {
     [Header("Rooms")]
     public GameObject[] fridgeRoom;
-    public GameObject[] freezerRoom;
     public GameObject[] pantryRoom;
-    public GameObject[] spiceRoom;
+
+    [Header("Recipes")]
+    public GameObject[] recipes;
 
     [Header("Food")]
     public GameObject[] dishes;

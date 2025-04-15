@@ -60,22 +60,12 @@ public class FallingFood : MonoBehaviour
         if (foodCategory == 1)
         {
             rand = Random.Range(0, foodlist.fridgeRoom.Length);
-            Instantiate(foodlist.fridgeRoom[rand], transform.position + Vector3.right * Random.Range(-10, 10f), foodlist.fridgeRoom[rand].transform.rotation);
+            Instantiate(foodlist.fridgeRoom[rand], transform.position + Vector3.right * Random.Range(-18, 18f), foodlist.fridgeRoom[rand].transform.rotation);
         }
         else if (foodCategory == 2)
         {
-            rand = Random.Range(0, foodlist.freezerRoom.Length);
-            Instantiate(foodlist.freezerRoom[rand], transform.position + Vector3.right * Random.Range(-10, 10f), foodlist.freezerRoom[rand].transform.rotation);
-        }
-        else if (foodCategory == 3)
-        {
             rand = Random.Range(0, foodlist.pantryRoom.Length);
-            Instantiate(foodlist.pantryRoom[rand], transform.position + Vector3.right * Random.Range(-10, 10f), foodlist.pantryRoom[rand].transform.rotation);
-        }
-        else if (foodCategory == 4)
-        {
-            rand = Random.Range(0, foodlist.freezerRoom.Length);
-            Instantiate(foodlist.freezerRoom[rand], transform.position + Vector3.right * Random.Range(-10, 10f), foodlist.spiceRoom[rand].transform.rotation);
+            Instantiate(foodlist.pantryRoom[rand], transform.position + Vector3.right * Random.Range(-18, 18f), foodlist.pantryRoom[rand].transform.rotation);
         }
 
         yield return new WaitForSeconds(0.6f);

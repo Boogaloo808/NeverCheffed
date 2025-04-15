@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c2e641251eed23b4c947ee691be6f280
+guid: d54c38e0c56e862478491a660492fc88
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 204114004160136784
-    second: Bacon in Bag 1_0
+      213: 6916705404235678212
+    second: Egg n Bacon Order ticket_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bacon in Bag 1_0
+      name: Egg n Bacon Order ticket_0
       rect:
         serializedVersion: 2
-        x: 89
-        y: 59
-        width: 322
-        height: 392
+        x: 99
+        y: 39
+        width: 312
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 056c5a7fa9825d200800000000000000
-      internalID: 204114004160136784
+      spriteID: 4020e7b3be21dff50800000000000000
+      internalID: 6916705404235678212
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Bacon in Bag 1_0: 204114004160136784
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

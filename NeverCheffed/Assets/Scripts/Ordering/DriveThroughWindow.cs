@@ -2,19 +2,22 @@ using UnityEngine;
 
 public class DriveThroughWindow : MonoBehaviour
 {
+    public OrderTicket OrderTicket;
+    public FoodList foodlist;
+    private int rand;
 
     public bool takeOrder = false;
 
     void Start()
     {
-        
+        OrderTicket = new OrderTicket();
     }
 
     void Update()
     {
         if (takeOrder)
         {
-
+            OrderTicket.ordered = true;
         }
     }
 
