@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4124470052954094851}
   - component: {fileID: 2583432802815776336}
   - component: {fileID: 143019677976118842}
+  - component: {fileID: 4809250441631605650}
   m_Layer: 5
   m_Name: Grilled Cheese
-  m_TagString: Untagged
+  m_TagString: Undefined
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,3 +76,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4809250441631605650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067496157168897085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131d51b0ae8c8584193ac84b1a580a44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

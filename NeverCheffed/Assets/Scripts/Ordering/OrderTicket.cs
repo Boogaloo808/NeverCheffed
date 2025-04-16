@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using UnityEditor.Build;
 using UnityEngine;
 
@@ -17,7 +18,15 @@ public class OrderTicket : MonoBehaviour
         if (ordered)
         {
             rand = Random.Range(0, foodlist.recipes.Length);
-            Instantiate(foodlist.recipes[rand], transform.position + Vector3.right * Random.Range(0, 0f), foodlist.recipes[rand].transform.rotation);
+            Instantiate(foodlist.recipes[rand], transform.position + Vector3.right, foodlist.recipes[rand].transform.rotation);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ticket"))
+        {
+            ordered = false;
         }
     }
 }

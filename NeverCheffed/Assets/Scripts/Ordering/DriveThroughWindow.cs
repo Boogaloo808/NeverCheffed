@@ -10,7 +10,7 @@ public class DriveThroughWindow : MonoBehaviour
 
     void Start()
     {
-        OrderTicket = new OrderTicket();
+        OrderTicket = GetComponent <OrderTicket>();
     }
 
     void Update()
@@ -26,6 +26,8 @@ public class DriveThroughWindow : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.Space))
         {
             takeOrder = true;
+
+            Debug.Log("OrderTaken");
         }
     }
 }
