@@ -18,6 +18,8 @@ public class DriveThroughWindow : MonoBehaviour
         if (takeOrder)
         {
             OrderTicket.ordered = true;
+            
+            takeOrder = false;
         }
     }
 

@@ -8,6 +8,7 @@ public class OrderTicket : MonoBehaviour
     private int rand;
 
     public bool ordered = false;
+    public bool haveOrder = false;
     void Start()
     {
         foodlist = GameObject.FindGameObjectWithTag("list of food").GetComponent<FoodList>();
@@ -15,15 +16,19 @@ public class OrderTicket : MonoBehaviour
 
     void Update()
     {
-        if (ordered == true)
+        rand = Random.Range(0, foodlist.recipes.Length);
+        if (ordered == true && haveOrder == false)
         {
-            rand = Random.Range(0, foodlist.recipes.Length);
-            //Instantiate(foodlist.recipes[rand], transform.position + Vector3.right, foodlist.recipes[rand].transform.rotation);
-            Instantiate(foodlist.recipes[rand], Vector3.zero, Quaternion.identity);
-
+                Instantiate(foodlist.recipes[rand], Vector3.zero, Quaternion.identity);
             ordered = false;
         }
     }
 
-
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject)
+        {
+            haveOrder = true;
+        }
+    }
 }
