@@ -15,18 +15,15 @@ public class OrderTicket : MonoBehaviour
 
     void Update()
     {
-        if (ordered)
+        if (ordered == true)
         {
             rand = Random.Range(0, foodlist.recipes.Length);
-            Instantiate(foodlist.recipes[rand], transform.position + Vector3.right, foodlist.recipes[rand].transform.rotation);
-        }
-    }
+            //Instantiate(foodlist.recipes[rand], transform.position + Vector3.right, foodlist.recipes[rand].transform.rotation);
+            Instantiate(foodlist.recipes[rand], Vector3.zero, Quaternion.identity);
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ticket"))
-        {
             ordered = false;
         }
     }
+
+
 }

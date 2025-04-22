@@ -10,7 +10,7 @@ public class DriveThroughWindow : MonoBehaviour
 
     void Start()
     {
-        OrderTicket = GetComponent <OrderTicket>();
+        
     }
 
     void Update()
