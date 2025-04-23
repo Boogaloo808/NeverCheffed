@@ -20,15 +20,11 @@ public class OrderTicket : MonoBehaviour
         if (ordered == true && haveOrder == false)
         {
                 Instantiate(foodlist.recipes[rand], Vector3.zero, Quaternion.identity);
-            ordered = false;
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject)
-        {
             haveOrder = true;
+        }
+        else
+        {
+            ordered = false;
         }
     }
 }

@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Salmon Nigiri Order ticket_0: 4876339494065353067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

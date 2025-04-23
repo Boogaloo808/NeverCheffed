@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 595517765061204688}
   - component: {fileID: -9040141514150777363}
   - component: {fileID: -7719915779379200825}
+  - component: {fileID: 5327542397577586690}
+  - component: {fileID: -897477448509496754}
   m_Layer: 5
   m_Name: Eggs and Bacon
-  m_TagString: Undefined
+  m_TagString: Ticket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,6 +91,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131d51b0ae8c8584193ac84b1a580a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ticketNumber: 0
+  FoodCount: {fileID: 0}
+  OrderTicket: {fileID: 0}
+  panSlot: {fileID: 0}
+  eggsAndBacon:
+  - 
+  _eggsAndBacon: {fileID: 1634789944830830736, guid: b7a50a90874acfc4482afa72becfe87b, type: 3}
 --- !u!61 &-7719915779379200825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,3 +144,48 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &5327542397577586690
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360053375012099440}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &-897477448509496754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360053375012099440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131d51b0ae8c8584193ac84b1a580a44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ticketNumber: 0
+  FoodCount: {fileID: 0}
+  OrderTicket: {fileID: 0}
+  panSlot: {fileID: 0}
+  eggsAndBacon: []
+  _eggsAndBacon: {fileID: 0}

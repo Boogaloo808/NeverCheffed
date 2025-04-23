@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Egg n Bacon Order ticket_0: 6916705404235678212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

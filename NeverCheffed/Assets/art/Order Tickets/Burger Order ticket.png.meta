@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Burger Order ticket_0: -7943874150292692148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

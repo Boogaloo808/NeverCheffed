@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Grilled Cheese Order ticket_0: 3777516096025006309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
