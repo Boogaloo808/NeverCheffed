@@ -1,7 +1,6 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.WSA;
 
 public class FallingFood : MonoBehaviour
 {

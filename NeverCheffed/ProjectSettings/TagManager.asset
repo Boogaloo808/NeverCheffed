@@ -24,6 +24,7 @@ TagManager:
   - UI
   - OTT
   - Ticket
+  - panSlot
   layers:
   - Default
   - TransparentFX

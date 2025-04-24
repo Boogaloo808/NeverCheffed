@@ -636,8 +636,8 @@ GameObject:
   m_Component:
   - component: {fileID: 134458104}
   m_Layer: 0
-  m_Name: FFT
-  m_TagString: Untagged
+  m_Name: panSlot
+  m_TagString: panSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3007,10 +3007,7 @@ MonoBehaviour:
   - {fileID: 1856910141173368487, guid: 84ea978acf1322540abd030453894d79, type: 3}
   - {fileID: 7770616821435188231, guid: d54395325a956f346a54ead4c29c1eb5, type: 3}
   recipes:
-  - {fileID: 1787205167710213815, guid: 7db89e688f85b014ea216b28707bff00, type: 3}
   - {fileID: 360053375012099440, guid: 5a2230df2d6cae947ae5825bfe466910, type: 3}
-  - {fileID: 1067496157168897085, guid: f6e74915782e5a04485b7df4aba61e22, type: 3}
-  - {fileID: 3157541657313986507, guid: 9f65ce7a962d9194b837bf778fcfdb90, type: 3}
   dishes: []
 --- !u!4 &1367559055
 Transform:
