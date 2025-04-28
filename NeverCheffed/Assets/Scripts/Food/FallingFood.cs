@@ -11,9 +11,9 @@ public class FallingFood : MonoBehaviour
     public Collider2D roomCollider;
 
     public int foodCategory;
+    public bool foodFalling;
 
-    bool playerInRoom = false;
-    public bool spawned = false;
+    public bool playerInRoom = false;
 
     void Start()
     {
@@ -46,11 +46,15 @@ public class FallingFood : MonoBehaviour
     void Update()
     {
 
-        if ((player.activated) && (spawned == false) && !wait && (playerInRoom))
+        if ((player.activated) && !wait && (playerInRoom))
+        {
             Invoke("Spawn", 0f);
+            foodFalling = true;
+        }
         if (player.activated == false)
         {
             CancelInvoke("Spawn");
+            foodFalling = false;
         }
     } 
 
