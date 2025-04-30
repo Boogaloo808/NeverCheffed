@@ -1,4 +1,6 @@
+using UnityEditor.Build;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActivatedAlarm : MonoBehaviour
 {
@@ -6,26 +8,24 @@ public class ActivatedAlarm : MonoBehaviour
     FoodList foodlist;
     PlayerController player;
 
-    public Material activeColor;
-    public Material unactiveColor;
-    MeshRenderer rend;
+    [SerializeField] private Image activatedAlarm;
+    public Color activeColor;
+    public Color unactiveColor;
 
     void Start()
     {
-        FFood = GetComponent<FallingFood>();
-        foodlist = GameObject.FindGameObjectWithTag("list of food").GetComponent<FoodList>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        rend = GetComponent<MeshRenderer>();
+        FFood = GameObject.Find("Spawner fridge").GetComponent<FallingFood>();
+        activatedAlarm.color = activeColor;
     }
     void Update()
     {
         if (FFood.foodFalling)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().material = activeColor;
+            activatedAlarm.color = activeColor;
         }
-        if (FFood.foodFalling == false)
+        else
         {
-            this.gameObject.GetComponent<SpriteRenderer>().material = unactiveColor;
+            activatedAlarm.color = unactiveColor;
         }
     }
 }

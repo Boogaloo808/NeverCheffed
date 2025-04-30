@@ -25,8 +25,11 @@ public class Ticket : MonoBehaviour
         if (ticketNumber == 0 && (FoodCount.EggNumber >= 2f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2))
         {
             Instantiate(_eggsAndBacon, panSlot.transform.position, _eggsAndBacon.transform.rotation);
+            transform.SetParent(GameObject.FindGameObjectWithTag("panSlot").transform, false);
 
             OrderTicket.haveOrder = false;
+
+            Destroy(gameObject);
 
             Debug.Log("ITS COOOKING");
         }
