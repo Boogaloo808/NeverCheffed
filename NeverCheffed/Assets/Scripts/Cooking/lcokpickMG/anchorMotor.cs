@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +15,8 @@ public class anchorMotor : MonoBehaviour
     bool isRunning = false;
     public int number;
     public TMPro.TextMeshProUGUI text;
+    public PlayerInput playerInput;
+    public GameObject lockAT;
 
     public Transform theWholeThing;
     public SpriteRenderer bg;
@@ -25,11 +28,20 @@ public class anchorMotor : MonoBehaviour
 
     void Start()
     {
+        lockAT.SetActive(false);
+        isRunning = false;
+    }
+    
+
+    public void startMG()
+    {
+        lockAT.SetActive(true);
         theWholeThingAnchor = theWholeThing.position;
         number = Random.Range(5, 16);
         anchor = GameObject.FindGameObjectWithTag("anchor").transform;
-    }
+        isRunning = true;
 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -130,7 +142,9 @@ public class anchorMotor : MonoBehaviour
             text.color = textColor;
             yield return null;
         }
-        Destroy(theWholeThing.gameObject);
+
+        playerInput.SwitchCurrentActionMap("Player");
+        lockAT.SetActive(false);
     }
 }
 

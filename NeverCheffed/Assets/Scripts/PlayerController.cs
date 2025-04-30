@@ -8,10 +8,10 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     cameraManager cam;
     public Transform cuttingboard;
+    public anchorMotor AM;
 
     public PlayerInput playerinput;
 
-    public bool usingPlayerAction = true;
     public bool usingChopMap = false;
     public bool usingcookMap = false;
     public bool usingfryMap = false;
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         cam = FindAnyObjectByType<cameraManager>();
         walkSpeed = 25f;
         move = new Vector2();
-        //playerinput.SwitchCurrentActionMap("Player");
+        playerinput.SwitchCurrentActionMap("Player");
 
         FoodList = GetComponent<FoodList>();
     }
@@ -78,6 +78,7 @@ public class PlayerController : MonoBehaviour
             case "cuttingboard":
                 atCuttingStation = true;
                 Debug.Log("At cutting Station");
+
                 break;
             default:
                 break;
@@ -95,15 +96,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void activateCutting()
-    {
-        if (atCuttingStation)
-        {
-            rb.transform.SetPositionAndRotation(cuttingboard.position, Quaternion.identity);
-            switchController();
-
-        }
-    }
 
     public void playerMove(InputAction.CallbackContext Context)
     {
@@ -115,23 +107,15 @@ public class PlayerController : MonoBehaviour
         if (Context.started)
         {
             Debug.Log("interact");
-            activateCutting();
+
+            if (atCuttingStation == true)
+            {
+                AM.startMG();
+                playerinput.SwitchCurrentActionMap("ChopMG");
+            }
         }
     }
 
-    public void switchController()
-    {
-        if (usingPlayerAction)
-        {
-            playerinput.SwitchCurrentActionMap("ChopMG");
-            usingPlayerAction = false;
-        }
-        else
-        {
-            playerinput.SwitchCurrentActionMap("Player");
-            usingPlayerAction = true;
-        }
-    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
