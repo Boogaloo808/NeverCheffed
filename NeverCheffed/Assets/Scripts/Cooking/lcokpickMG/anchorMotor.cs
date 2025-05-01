@@ -16,26 +16,26 @@ public class anchorMotor : MonoBehaviour
     public int number;
     public TMPro.TextMeshProUGUI text;
     public PlayerInput playerInput;
-    public GameObject lockAT;
+    public PlayerController PC;
 
     public Transform theWholeThing;
     public SpriteRenderer bg;
     public AudioSource sound;
-    public AudioClip hit, miss, fail, success;
+    public AudioClip hit, miss;
     Color color = Color.black;
     Vector2 theWholeThingAnchor;
     float shake;
 
     void Start()
     {
-        lockAT.SetActive(false);
+
         isRunning = false;
     }
     
 
     public void startMG()
     {
-        lockAT.SetActive(true);
+
         theWholeThingAnchor = theWholeThing.position;
         number = Random.Range(5, 16);
         anchor = GameObject.FindGameObjectWithTag("anchor").transform;
@@ -117,7 +117,7 @@ public class anchorMotor : MonoBehaviour
                     StartCoroutine(nameof(DotFade));
 
                 }
-                Debug.Log("you fucked up");
+                Debug.Log("you messed up");
             }
         }
     }
@@ -143,8 +143,7 @@ public class anchorMotor : MonoBehaviour
             yield return null;
         }
 
-        playerInput.SwitchCurrentActionMap("Player");
-        lockAT.SetActive(false);
+        PC.UsingCuttingStation = false;
     }
 }
 

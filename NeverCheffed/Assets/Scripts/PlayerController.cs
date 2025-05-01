@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public bool activated = false;
     public bool inRoom = false;
     public bool atCuttingStation = false;
+    public bool UsingCuttingStation = false;
     FoodList FoodList;
 
     void Start()
@@ -31,7 +32,6 @@ public class PlayerController : MonoBehaviour
         cam = FindAnyObjectByType<cameraManager>();
         walkSpeed = 25f;
         move = new Vector2();
-        playerinput.SwitchCurrentActionMap("Player");
 
         FoodList = GetComponent<FoodList>();
     }
@@ -110,8 +110,7 @@ public class PlayerController : MonoBehaviour
 
             if (atCuttingStation == true)
             {
-                AM.startMG();
-                playerinput.SwitchCurrentActionMap("ChopMG");
+                UsingCuttingStation = true;
             }
         }
     }
