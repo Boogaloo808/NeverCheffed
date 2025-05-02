@@ -6,27 +6,33 @@ public class ActivateMG : MonoBehaviour
     public PlayerController controller;
     public GameObject Lock;
     public anchorMotor AM;
-    public PlayerInput playerinput;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public bool startedMG = false;
+    
     void Start()
     {
         Lock.SetActive(false);
-        playerinput.SwitchCurrentActionMap("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (controller.UsingCuttingStation == true)
         {
             Lock.SetActive(true);
-            AM.startMG();
-            playerinput.SwitchCurrentActionMap("ChopMG");
+            if (startedMG == false)
+            {
+                Debug.Log("Start minigame");
+                AM.startMG();
+                startedMG = true;
+            }
+
         }
         else
         {
             Lock.SetActive(false);
-            playerinput.SwitchCurrentActionMap("Player");
+            startedMG = false;
+
         }
     }
 }

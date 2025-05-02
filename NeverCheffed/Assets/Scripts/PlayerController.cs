@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public bool usingcookMap = false;
     public bool usingfryMap = false;
 
+    public bool frozen = false;
+
     public float walkSpeed;
     public Vector2 move;
     public float inputX;
@@ -52,6 +54,15 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space) && activated == true)
         {
             activated = false;
+        }
+
+        if (frozen)
+        {
+            walkSpeed = 0f;
+        }
+        else
+        {
+            walkSpeed = 25f;
         }
     }
 
@@ -110,7 +121,9 @@ public class PlayerController : MonoBehaviour
 
             if (atCuttingStation == true)
             {
+                AM.startMG();
                 UsingCuttingStation = true;
+                frozen = true;
             }
         }
     }

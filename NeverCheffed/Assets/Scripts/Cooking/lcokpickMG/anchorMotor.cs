@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class anchorMotor : MonoBehaviour
 {
@@ -12,7 +14,7 @@ public class anchorMotor : MonoBehaviour
 
     Transform anchor;
     GameObject currentDot;
-    bool isRunning = false;
+    [SerializeField]bool isRunning = false;
     public int number;
     public TMPro.TextMeshProUGUI text;
     public PlayerInput playerInput;
@@ -26,13 +28,6 @@ public class anchorMotor : MonoBehaviour
     Vector2 theWholeThingAnchor;
     float shake;
 
-    void Start()
-    {
-
-        isRunning = false;
-    }
-    
-
     public void startMG()
     {
 
@@ -40,6 +35,7 @@ public class anchorMotor : MonoBehaviour
         number = Random.Range(5, 16);
         anchor = GameObject.FindGameObjectWithTag("anchor").transform;
         isRunning = true;
+        Debug.Log("Start running");
 
     }
     // Update is called once per frame
@@ -52,6 +48,7 @@ public class anchorMotor : MonoBehaviour
         color = Color.Lerp(color, Color.black, 0.02f);
         if (isRunning)
         {
+            Debug.Log("Running");
             transform.RotateAround(anchor.position, Vector3.forward, Speed * Time.deltaTime * -(int)direction);
         }
         
@@ -97,6 +94,7 @@ public class anchorMotor : MonoBehaviour
                 sound.clip = hit;
                 sound.Play();
                 currentDot.transform.position = Random.insideUnitCircle.normalized * 1.65f;
+                currentDot.transform.position =  new Vector2(currentDot.transform.position.x + 0.09f, currentDot.transform.position.y + 1.05f);
                 number--;
                 if (number <= 0)
                 {
@@ -144,6 +142,9 @@ public class anchorMotor : MonoBehaviour
         }
 
         PC.UsingCuttingStation = false;
+        PC.frozen = false;
+        Debug.Log("Dot fade");
+        isRunning = false;
     }
 }
 

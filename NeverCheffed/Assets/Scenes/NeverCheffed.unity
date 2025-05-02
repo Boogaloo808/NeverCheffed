@@ -2764,7 +2764,7 @@ MonoBehaviour:
   controller: {fileID: 1696488120}
   Lock: {fileID: 1878406825}
   AM: {fileID: 1822555103}
-  playerinput: {fileID: 1696488119}
+  startedMG: 0
 --- !u!4 &807082694
 Transform:
   m_ObjectHideFlags: 0
@@ -3013,7 +3013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1045138898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4542,7 +4542,19 @@ MonoBehaviour:
     m_ActionId: 6b444451-8a00-4d00-a97e-f47457f736a8
     m_ActionName: 'Player/Look[/Mouse/delta,/Pen/delta]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1822555103}
+        m_TargetAssemblyTypeName: anchorMotor, Assembly-CSharp
+        m_MethodName: Press
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
     m_ActionName: 'Player/Attack[/Mouse/leftButton,/Keyboard/enter]'
   - m_PersistentCalls:
@@ -4685,6 +4697,7 @@ MonoBehaviour:
   usingChopMap: 0
   usingcookMap: 0
   usingfryMap: 0
+  frozen: 0
   walkSpeed: 15
   move: {x: 0, y: 0}
   inputX: 0
@@ -5429,6 +5442,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 2122112067833620029, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122112067833620029, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.65
+      objectReference: {fileID: 0}
     - target: {fileID: 2466976034024208090, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -5449,6 +5470,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3581041812607097520, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581041812607097520, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4682498190614327607, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
       propertyPath: m_Name
       value: lock
@@ -5463,11 +5492,11 @@ PrefabInstance:
       objectReference: {fileID: 24300002, guid: 20c2d93fd4b37d04b98b3ad1c43f0e0f, type: 2}
     - target: {fileID: 7982190559955956405, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -93.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7982190559955956405, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 44.5
+      value: 46.3
       objectReference: {fileID: 0}
     - target: {fileID: 8698079707783591265, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
       propertyPath: m_SortingLayer
@@ -5525,6 +5554,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8900719703653137539, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
+      propertyPath: PC
+      value: 
+      objectReference: {fileID: 1696488120}
     - target: {fileID: 8900719703653137539, guid: 0d2cfcd5cfc529249b994663ab26866e, type: 3}
       propertyPath: hit
       value: 
