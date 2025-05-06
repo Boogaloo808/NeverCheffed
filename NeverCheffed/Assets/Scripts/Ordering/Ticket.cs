@@ -22,7 +22,7 @@ public class Ticket : MonoBehaviour
     {
         transform.SetParent(GameObject.FindGameObjectWithTag("OTT").transform, false);
 
-        if (ticketNumber == 0 && (FoodCount.EggNumber >= 2f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2))
+        if (ticketNumber == 0 && (FoodCount.EggNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2))
         {
             Instantiate(_eggsAndBacon, panSlot.transform.position, _eggsAndBacon.transform.rotation);
 
