@@ -29,7 +29,7 @@ public class PanScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Rice"))
             counter.RiceNumber++;
         if (collision.gameObject.CompareTag("Flour"))
-            counter.FlourNumber++;
+            counter.VeggieNumber++;
         if (collision.gameObject.CompareTag("Spice"))
             counter.SpiceNumber++;
         if (collision.gameObject.CompareTag("Bread"))

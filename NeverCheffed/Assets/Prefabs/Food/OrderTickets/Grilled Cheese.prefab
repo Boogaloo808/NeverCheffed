@@ -89,6 +89,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131d51b0ae8c8584193ac84b1a580a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ticketNumber: 2
+  FoodCount: {fileID: 0}
+  OrderTicket: {fileID: 0}
+  panSlot: {fileID: 0}
+  _eggsAndBacon: {fileID: 3274595159799365388, guid: b11a9ae64c6ed9f4080330aeeb076238, type: 3}
 --- !u!61 &1621657742144332051
 BoxCollider2D:
   m_ObjectHideFlags: 0

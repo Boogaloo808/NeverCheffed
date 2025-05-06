@@ -8,7 +8,7 @@ public class FoodCount : MonoBehaviour
     public TMPro.TextMeshProUGUI MeatText;
     public TMPro.TextMeshProUGUI EggText;
     public TMPro.TextMeshProUGUI RiceText;
-    public TMPro.TextMeshProUGUI FlourText;
+    public TMPro.TextMeshProUGUI VeggieText;
     public TMPro.TextMeshProUGUI SpiceText;
     public TMPro.TextMeshProUGUI BreadText;
 
@@ -17,7 +17,7 @@ public class FoodCount : MonoBehaviour
     public int MeatNumber = 0;
     public int EggNumber = 0;
     public int RiceNumber = 0;
-    public int FlourNumber = 0;
+    public int VeggieNumber = 0;
     public int SpiceNumber = 0;
     public int BreadNumber = 0;
 
@@ -28,7 +28,7 @@ public class FoodCount : MonoBehaviour
         MeatText.text = MeatNumber + " Meat";
         EggText.text = EggNumber + " Egg";
         RiceText.text = RiceNumber + " Rice";
-        FlourText.text = FlourNumber + " Flour";
+        VeggieText.text = VeggieNumber + " Veggie";
         SpiceText.text = SpiceNumber + " Spice";
         BreadText.text = BreadNumber + " Bread";
     }

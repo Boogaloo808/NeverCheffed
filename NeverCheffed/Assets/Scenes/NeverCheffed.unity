@@ -1120,8 +1120,8 @@ GameObject:
   - component: {fileID: 258179961}
   - component: {fileID: 258179960}
   m_Layer: 5
-  m_Name: Flour
-  m_TagString: Flour
+  m_Name: Veggie
+  m_TagString: Veggie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0 Flour
+  m_text: 0 Veggie
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2942,7 +2942,7 @@ MonoBehaviour:
   MeatText: {fileID: 340329285}
   EggText: {fileID: 1585948637}
   RiceText: {fileID: 90748569}
-  FlourText: {fileID: 258179960}
+  VeggieText: {fileID: 0}
   SpiceText: {fileID: 857682788}
   BreadText: {fileID: 228251101}
   CheeseNumber: 0
@@ -2950,7 +2950,7 @@ MonoBehaviour:
   MeatNumber: 0
   EggNumber: 0
   RiceNumber: 0
-  FlourNumber: 0
+  VeggieNumber: 0
   SpiceNumber: 0
   BreadNumber: 0
 --- !u!114 &1045138899
@@ -3853,6 +3853,9 @@ MonoBehaviour:
   - {fileID: 3058565261281141133, guid: b12f74cee9af06e4695bc66dcbca9418, type: 3}
   recipes:
   - {fileID: 360053375012099440, guid: 5a2230df2d6cae947ae5825bfe466910, type: 3}
+  - {fileID: 1787205167710213815, guid: 7db89e688f85b014ea216b28707bff00, type: 3}
+  - {fileID: 1067496157168897085, guid: f6e74915782e5a04485b7df4aba61e22, type: 3}
+  - {fileID: 3157541657313986507, guid: 9f65ce7a962d9194b837bf778fcfdb90, type: 3}
   dishes: []
 --- !u!4 &1367559055
 Transform:
