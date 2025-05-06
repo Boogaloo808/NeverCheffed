@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b3e848c9cbdcc494f8f664bcb2af35f5
+guid: 36a400d469c959644bf4342734695466
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7523970955242101793
-    second: Lettuce_0
+      213: -1930525601124487364
+    second: Eggs and Bacon (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lettuce_0
+      name: Eggs and Bacon (1)_0
       rect:
         serializedVersion: 2
-        x: 159
-        y: 149
-        width: 202
-        height: 172
+        x: 119
+        y: 119
+        width: 342
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd32078a74c759790800000000000000
-      internalID: -7523970955242101793
+      spriteID: c3f6d23b1356535e0800000000000000
+      internalID: -1930525601124487364
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Lettuce_0: -7523970955242101793
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d55a5b01cf4ccec4abe2a7158b1987e6
+guid: 75b0264451b80db48aab977ee0bd6752
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3478765665280523286
-    second: Eggs in Crate_0
+      213: 7939597634300626059
+    second: Onigiri Dish_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Eggs in Crate_0
+      name: Onigiri Dish_0
       rect:
         serializedVersion: 2
-        x: 109
-        y: 179
-        width: 292
-        height: 222
+        x: 99
+        y: 129
+        width: 342
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae301280f01f8bfc0800000000000000
-      internalID: -3478765665280523286
+      spriteID: b84450c8bfd1f2e60800000000000000
+      internalID: 7939597634300626059
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Eggs in Crate_0: -3478765665280523286
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

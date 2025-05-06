@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 43197e0442330c7408dabb7921fcedb0
+guid: af29ae9e2553df5448677125f40c2fb0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3675063779354177482
-    second: Tomatos_0
+      213: -6720037532114144175
+    second: Cheddar Cheese Cylinder (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tomatos_0
+      name: Cheddar Cheese Cylinder (1)_0
       rect:
         serializedVersion: 2
-        x: 209
-        y: 229
+        x: 79
+        y: 249
         width: 172
-        height: 162
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acf6f473903700330800000000000000
-      internalID: 3675063779354177482
+      spriteID: 1543b050871adb2a0800000000000000
+      internalID: -6720037532114144175
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Tomatos_0: 3675063779354177482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

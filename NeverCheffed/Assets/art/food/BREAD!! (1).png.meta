@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d9bfdc594dfca0147aadd957174c9a5e
+guid: fbc6a880565d4144380c38f664b26828
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9065184355264430308
-    second: Crate of tomatos_0
+      213: -2149360942805898861
+    second: BREAD!! (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crate of tomatos_0
+      name: BREAD!! (1)_0
       rect:
         serializedVersion: 2
-        x: 109
-        y: 179
-        width: 242
-        height: 250
+        x: 89
+        y: 209
+        width: 222
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e007f644210ecd70800000000000000
-      internalID: 9065184355264430308
+      spriteID: 399a4fd3c9feb22e0800000000000000
+      internalID: -2149360942805898861
       vertices: []
       indices: 
       edges: []
@@ -133,7 +133,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Crate of tomatos_0: 9065184355264430308
+      BREAD!! (1)_0: -2149360942805898861
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

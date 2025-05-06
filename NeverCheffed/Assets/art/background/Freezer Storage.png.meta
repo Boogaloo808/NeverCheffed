@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bac5e374fe2bc3d4dac04f0da2bd774d
+guid: 5976bad29558f904d923ff816f3a807e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3007355051125430864
-    second: Orange Soda_0
+      213: 610773959692727930
+    second: Freezer Storage_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orange Soda_0
+      name: Freezer Storage_0
       rect:
         serializedVersion: 2
-        x: 149
-        y: 149
-        width: 122
-        height: 272
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b52130c38ab346d0800000000000000
-      internalID: -3007355051125430864
+      spriteID: a763b892ea7e97800800000000000000
+      internalID: 610773959692727930
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Orange Soda_0: -3007355051125430864
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
