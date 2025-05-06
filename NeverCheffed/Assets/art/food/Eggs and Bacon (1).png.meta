@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eggs and Bacon (1)_0: -1930525601124487364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

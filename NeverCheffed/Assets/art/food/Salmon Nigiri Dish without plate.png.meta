@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Salmon Nigiri Dish without plate_0: 5106836969787996753
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

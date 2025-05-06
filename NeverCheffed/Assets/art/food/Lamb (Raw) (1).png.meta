@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lamb (Raw) (1)_0: 8881709636020859416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Onigiri Dish_0: 7939597634300626059
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

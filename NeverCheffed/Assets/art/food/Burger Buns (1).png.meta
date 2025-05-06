@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Burger Buns (1)_0: -18223033260430057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

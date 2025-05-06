@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Freezer Storage_0: 610773959692727930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

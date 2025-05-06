@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cheddar Cheese Cylinder (1)_0: -6720037532114144175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
