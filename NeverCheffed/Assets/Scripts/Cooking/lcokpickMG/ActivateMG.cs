@@ -22,10 +22,13 @@ public class ActivateMG : MonoBehaviour
             Lock.SetActive(true);
             if (startedMG == false)
             {
+                Lock.SetActive(true);
                 Debug.Log("Start minigame");
                 AM.startMG();
                 startedMG = true;
             }
+
+            
 
         }
         else

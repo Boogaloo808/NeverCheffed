@@ -16,9 +16,10 @@ public class anchorMotor : MonoBehaviour
     GameObject currentDot;
     [SerializeField]bool isRunning = false;
     public int number;
-    public TMPro.TextMeshProUGUI text;
+    public TMPro.TextMeshPro text;
     public PlayerInput playerInput;
     public PlayerController PC;
+    public GameObject Lock;
 
     public Transform theWholeThing;
     public SpriteRenderer bg;
@@ -30,7 +31,7 @@ public class anchorMotor : MonoBehaviour
 
     public void startMG()
     {
-
+        Lock.SetActive(true);
         theWholeThingAnchor = theWholeThing.position;
         number = Random.Range(5, 16);
         anchor = GameObject.FindGameObjectWithTag("anchor").transform;
