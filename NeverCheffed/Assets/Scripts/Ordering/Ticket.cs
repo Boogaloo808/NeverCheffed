@@ -9,13 +9,14 @@ public class Ticket : MonoBehaviour
     public FoodCount FoodCount;
     public OrderTicket OrderTicket;
     public Transform panSlot;
+    public anchorMotor anchorMotor;
 
-    public GameObject _eggsAndBacon;
-    public GameObject _burger;
-    public GameObject _grilledCheese;
-    public GameObject _salmonNigiri;
+    public bool haveIng = false;
+
+    public GameObject _FinishedFood;
     void Start()
     {
+        anchorMotor = GameObject.FindGameObjectWithTag("CuttingBoard").GetComponent<anchorMotor>();
         FoodCount = GameObject.Find("UI").GetComponent<FoodCount>();
         OrderTicket = GameObject.FindGameObjectWithTag("OTT").GetComponent<OrderTicket>();
         panSlot = GameObject.Find("panSlot").GetComponent<Transform>();
@@ -25,60 +26,62 @@ public class Ticket : MonoBehaviour
     {
         transform.SetParent(GameObject.FindGameObjectWithTag("OTT").transform, false);
 
+        
+
         if (ticketNumber == 0 && (FoodCount.EggNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2))
         {
-            Instantiate(_eggsAndBacon, panSlot.transform.position, _eggsAndBacon.transform.rotation);
+            haveIng = true;
+            if (anchorMotor.doneCutting)
+            {
+                Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
-            OrderTicket.haveOrder = false;
+                OrderTicket.haveOrder = false;
 
-            FoodCount.EggNumber -= 1;
-            FoodCount.MeatNumber -= 1;
-            FoodCount.SpiceNumber -= 2;
+                FoodCount.EggNumber -= 1;
+                FoodCount.MeatNumber -= 1;
+                FoodCount.SpiceNumber -= 2;
 
-            Destroy(gameObject);
+                Destroy(gameObject);
 
-            Debug.Log("ITS COOOKING");
+                Debug.Log("ITS COOOKING");
+            }
         }
-
-        if (ticketNumber == 1 && (FoodCount.CheeseNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.BreadNumber >= 1) && (FoodCount.VeggieNumber >= 2))
+        else if (ticketNumber == 1 && (FoodCount.CheeseNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.BreadNumber >= 1) && (FoodCount.VeggieNumber >= 2) && anchorMotor.doneCutting)
         {
-            Instantiate(_eggsAndBacon, panSlot.transform.position, _eggsAndBacon.transform.rotation);
+            Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
             OrderTicket.haveOrder = false;
 
             FoodCount.CheeseNumber -= 1;
             FoodCount.MeatNumber -= 1;
             FoodCount.BreadNumber -= 1;
+            FoodCount.VeggieNumber -= 2;
 
             Destroy(gameObject);
 
             Debug.Log("ITS COOOKING");
         }
-
-        if (ticketNumber == 2 && (FoodCount.EggNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2))
+        else if (ticketNumber == 2 && (FoodCount.BreadNumber >= 1f) && (FoodCount.CheeseNumber >= 1f) && anchorMotor.doneCutting)
         {
-            Instantiate(_eggsAndBacon, panSlot.transform.position, _eggsAndBacon.transform.rotation);
+            Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
             OrderTicket.haveOrder = false;
 
-            FoodCount.EggNumber -= 1;
-            FoodCount.MeatNumber -= 1;
-            FoodCount.SpiceNumber -= 2;
+            FoodCount.BreadNumber -= 1;
+            FoodCount.CheeseNumber -= 1;
 
             Destroy(gameObject);
 
             Debug.Log("ITS COOOKING");
         }
-
-        if (ticketNumber == 3 && (FoodCount.EggNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2))
+        else if (ticketNumber == 3 && (FoodCount.RiceNumber >= 1) && (FoodCount.MeatNumber >= 1f) && anchorMotor.doneCutting)
         {
-            Instantiate(_eggsAndBacon, panSlot.transform.position, _eggsAndBacon.transform.rotation);
+            Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
             OrderTicket.haveOrder = false;
 
-            FoodCount.EggNumber -= 1;
+            FoodCount.RiceNumber -= 1;
             FoodCount.MeatNumber -= 1;
-            FoodCount.SpiceNumber -= 2;
 
             Destroy(gameObject);
 

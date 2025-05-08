@@ -26,6 +26,7 @@ TagManager:
   - panSlot
   - Undefined
   - Veggie
+  - CuttingBoard
   layers:
   - Default
   - TransparentFX

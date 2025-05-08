@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7054111300585596816}
   m_Layer: 5
   m_Name: Salmon Nigiri
-  m_TagString: Undefined
+  m_TagString: Ticket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,9 @@ MonoBehaviour:
   FoodCount: {fileID: 0}
   OrderTicket: {fileID: 0}
   panSlot: {fileID: 0}
-  _eggsAndBacon: {fileID: 2580506289396022613, guid: f6c415113947ca04b9759ac9f4411f36, type: 3}
+  anchorMotor: {fileID: 0}
+  haveIng: 0
+  _FinishedFood: {fileID: 2580506289396022613, guid: f6c415113947ca04b9759ac9f4411f36, type: 3}
 --- !u!61 &7054111300585596816
 BoxCollider2D:
   m_ObjectHideFlags: 0

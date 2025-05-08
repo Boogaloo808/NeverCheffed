@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2915feb3b8e7aed498e7b22102161fac
+guid: d21ac49df1eed19479e18f0155df6b44
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -531796805788751734
-    second: Fire Alarm Light (OFF)_0
+      213: 3675063779354177482
+    second: Tomatos_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire Alarm Light (OFF)_0
+      name: Tomatos_0
       rect:
         serializedVersion: 2
-        x: 179
-        y: 219
-        width: 162
-        height: 172
+        x: 209
+        y: 229
+        width: 172
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a88264a6f9dae98f0800000000000000
-      internalID: -531796805788751734
+      spriteID: acf6f473903700330800000000000000
+      internalID: 3675063779354177482
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Fire Alarm Light (OFF)_0: -531796805788751734
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

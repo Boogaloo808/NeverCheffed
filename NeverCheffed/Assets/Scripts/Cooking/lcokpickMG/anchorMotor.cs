@@ -8,6 +8,8 @@ using UnityEngine.UIElements;
 
 public class anchorMotor : MonoBehaviour
 {
+    public Ticket Ticket;
+
     public int Speed = 5;
     public int tries = 3;
     Direction direction = Direction.clockwise;
@@ -20,6 +22,7 @@ public class anchorMotor : MonoBehaviour
     public PlayerInput playerInput;
     public PlayerController PC;
     public GameObject Lock;
+    public bool doneCutting = false;
 
     public Transform theWholeThing;
     public SpriteRenderer bg;
@@ -37,6 +40,7 @@ public class anchorMotor : MonoBehaviour
         anchor = GameObject.FindGameObjectWithTag("anchor").transform;
         isRunning = true;
         Debug.Log("Start running");
+        Ticket = GameObject.FindGameObjectWithTag("Ticket").GetComponent<Ticket>();
 
     }
     // Update is called once per frame
@@ -108,14 +112,7 @@ public class anchorMotor : MonoBehaviour
                 sound.clip = miss;
                 sound.Play();
                 shake = 2;
-                tries--;
                 color = Color.red;
-                if (tries <= 0)
-                {
-                    Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-                    StartCoroutine(nameof(DotFade));
-
-                }
                 Debug.Log("you messed up");
             }
         }
@@ -146,6 +143,8 @@ public class anchorMotor : MonoBehaviour
         PC.frozen = false;
         Debug.Log("Dot fade");
         isRunning = false;
+
+        doneCutting = true;
     }
 }
 

@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     public bool atCuttingStation = false;
     public bool UsingCuttingStation = false;
     FoodList FoodList;
+    public Ticket ticket;
 
     void Start()
     {
@@ -34,12 +35,13 @@ public class PlayerController : MonoBehaviour
         cam = FindAnyObjectByType<cameraManager>();
         walkSpeed = 25f;
         move = new Vector2();
-
+        ticket = GameObject.Find("Ticket").GetComponent<Ticket>();
         FoodList = GetComponent<FoodList>();
     }
 
     void Update()
     {
+
         move.x = inputX;
         if (move == Vector2.zero)
         {
@@ -64,6 +66,8 @@ public class PlayerController : MonoBehaviour
         {
             walkSpeed = 25f;
         }
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -119,7 +123,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("interact");
 
-            if (atCuttingStation == true)
+            if ((atCuttingStation == true) && (ticket.haveIng))
             {
                 AM.startMG();
                 UsingCuttingStation = true;

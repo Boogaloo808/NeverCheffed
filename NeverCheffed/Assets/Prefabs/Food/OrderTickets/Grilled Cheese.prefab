@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1621657742144332051}
   m_Layer: 5
   m_Name: Grilled Cheese
-  m_TagString: Undefined
+  m_TagString: Ticket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,9 @@ MonoBehaviour:
   FoodCount: {fileID: 0}
   OrderTicket: {fileID: 0}
   panSlot: {fileID: 0}
-  _eggsAndBacon: {fileID: 3274595159799365388, guid: b11a9ae64c6ed9f4080330aeeb076238, type: 3}
+  anchorMotor: {fileID: 0}
+  haveIng: 0
+  _FinishedFood: {fileID: 3274595159799365388, guid: b11a9ae64c6ed9f4080330aeeb076238, type: 3}
 --- !u!61 &1621657742144332051
 BoxCollider2D:
   m_ObjectHideFlags: 0

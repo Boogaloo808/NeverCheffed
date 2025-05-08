@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,9 +34,17 @@ public class ActivateMG : MonoBehaviour
         }
         else
         {
+            StartCoroutine(WaitTime());
             Lock.SetActive(false);
             startedMG = false;
 
         }
+    }
+
+    IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Lock.SetActive(false);
+        startedMG = false;
     }
 }

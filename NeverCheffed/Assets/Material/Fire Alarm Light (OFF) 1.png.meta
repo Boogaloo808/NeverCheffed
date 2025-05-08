@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire Alarm Light (OFF) 1_0: -1447836061376974807
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
