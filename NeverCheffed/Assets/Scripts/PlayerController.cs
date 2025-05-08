@@ -49,15 +49,6 @@ public class PlayerController : MonoBehaviour
         }
         rb.AddForce(move * walkSpeed);
 
-        if (Input.GetKeyDown(KeyCode.Space) && activated == false && inRoom == true)
-        {
-            activated = true;
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && activated == true)
-        {
-            activated = false;
-        }
-
         if (frozen)
         {
             walkSpeed = 0f;
@@ -70,6 +61,17 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void ActivateAlarm(InputAction.CallbackContext Context)
+    {
+        if (activated == false && inRoom == true)
+        {
+            activated = true;
+        }
+        else if (activated == true)
+        {
+            activated = false;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.name)

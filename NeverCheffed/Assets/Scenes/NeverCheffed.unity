@@ -440,6 +440,7 @@ GameObject:
   - component: {fileID: 107019966}
   - component: {fileID: 107019968}
   - component: {fileID: 107019967}
+  - component: {fileID: 107019969}
   m_Layer: 5
   m_Name: Star
   m_TagString: Untagged
@@ -486,7 +487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 619dbb052eda73747ac18ef1477d5c11, type: 3}
+  m_Texture: {fileID: 2800000, guid: fd767c49b95946b48b1cb951759e541a, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -501,6 +502,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107019965}
   m_CullTransparentMesh: 1
+--- !u!95 &107019969
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107019965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5fb818103272ec4bb6f2a3d0bdafe14, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &119685761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1081,7 @@ GameObject:
   - component: {fileID: 255567171}
   - component: {fileID: 255567173}
   - component: {fileID: 255567172}
+  - component: {fileID: 255567174}
   m_Layer: 5
   m_Name: Star (4)
   m_TagString: Untagged
@@ -1119,6 +1143,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255567170}
   m_CullTransparentMesh: 1
+--- !u!95 &255567174
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255567170}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f3c02632c75dde4390aeeae0dc84228, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &258179959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,8 +2533,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294915328
+  m_fontColor: {r: 0, g: 0.2094214, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2505,8 +2551,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3085,6 +3131,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1998612620}
   - {fileID: 107019966}
   - {fileID: 1419985119}
   - {fileID: 1972408089}
@@ -3168,6 +3215,7 @@ MonoBehaviour:
   OrderTicket: {fileID: 716337900}
   foodlist: {fileID: 1367559054}
   takeOrder: 0
+  onwindow: 0
 --- !u!61 &1200552002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3247,7 +3295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1268889425
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3267,7 +3315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46.9, y: -118.4}
+  m_AnchoredPosition: {x: -93.4, y: -121.3}
   m_SizeDelta: {x: 1458.0789, y: 316.1574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1268889426
@@ -3362,7 +3410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000024796, y: 127.7}
+  m_AnchoredPosition: {x: 0.000024796, y: 130.2}
   m_SizeDelta: {x: 60.4352, y: 60.4352}
   m_Pivot: {x: 0.5, y: 0.49999994}
 --- !u!114 &1275537588
@@ -3435,7 +3483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1282549674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3452,6 +3500,7 @@ MonoBehaviour:
   dialogueText: {fileID: 749029558}
   animator: {fileID: 1268889426}
   Ayanimator: {fileID: 1337531835}
+  talking: 0
 --- !u!114 &1282549675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3719,7 +3768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1337531835
 Animator:
   serializedVersion: 7
@@ -3757,9 +3806,17 @@ MonoBehaviour:
   dialogue:
     name: Aya
     sentences:
-    - hey this is just a test
-    - if it worked you should see this new text
-    - you got this one more tap and it worked
+    - Hey I'm Aya, And im going to be guiding you through how to play this game
+    - Use left joystick to move left and right (A and D if on Keyboard and mouse)
+    - use (E) to interact with your cutting board
+    - use (SPACE) to get your order from the window while standing next to it
+    - use (SPACE) to turn on food dropping as indicated by the red alarm at the top
+    - the food you catch is shown at the bottom of the screen
+    - the current order will be shown in the top left corner after you interact with
+      the window
+    - in the top right is your star value if it reaches 0 you lose but if you reach
+      five then you'll win
+    - now your ready to start cooking, have fun
 --- !u!114 &1337531837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3928,6 +3985,7 @@ GameObject:
   - component: {fileID: 1419985119}
   - component: {fileID: 1419985121}
   - component: {fileID: 1419985120}
+  - component: {fileID: 1419985122}
   m_Layer: 5
   m_Name: Star (1)
   m_TagString: Untagged
@@ -3989,6 +4047,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419985118}
   m_CullTransparentMesh: 1
+--- !u!95 &1419985122
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419985118}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7749c16b11fb542439eed00b734779b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1453091064
 GameObject:
   m_ObjectHideFlags: 0
@@ -4512,7 +4592,31 @@ MonoBehaviour:
     m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
     m_ActionName: 'Player/Crouch[/Keyboard/c]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1696488120}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: ActivateAlarm
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1200552001}
+        m_TargetAssemblyTypeName: DriveThroughWindow, Assembly-CSharp
+        m_MethodName: grabOrder
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: f1ba0d36-48eb-4cd5-b651-1c94a6531f70
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
@@ -4661,7 +4765,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.7892081, y: 0.24575734}
+  m_Offset: {x: -0.7892081, y: 0.016879678}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.49}
@@ -4671,7 +4775,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2174379, y: 2.9915147}
+  m_Size: {x: 1.2174379, y: 2.5337594}
   m_EdgeRadius: 0
 --- !u!50 &1696488122
 Rigidbody2D:
@@ -5129,6 +5233,7 @@ GameObject:
   - component: {fileID: 1972408089}
   - component: {fileID: 1972408091}
   - component: {fileID: 1972408090}
+  - component: {fileID: 1972408092}
   m_Layer: 5
   m_Name: Star (2)
   m_TagString: Untagged
@@ -5190,6 +5295,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972408088}
   m_CullTransparentMesh: 1
+--- !u!95 &1972408092
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972408088}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd223c9035ab88f418a405b2ccc8335c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1998612619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998612620}
+  - component: {fileID: 1998612621}
+  m_Layer: 0
+  m_Name: staramanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998612620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998612619}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.513848, y: -210.12857, z: -2.428412}
+  m_LocalScale: {x: 0.2083333, y: 0.2083333, z: 0.2083333}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1070394962}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1998612621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998612619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e1571e44a35c084bb2ff612e2764b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  star1: {fileID: 107019969}
+  star2: {fileID: 1419985122}
+  star3: {fileID: 1972408092}
+  star4: {fileID: 2096672169}
+  star5: {fileID: 255567174}
+  starVal: 0.5
 --- !u!1 &2006461836
 GameObject:
   m_ObjectHideFlags: 0
@@ -5754,6 +5931,7 @@ GameObject:
   - component: {fileID: 2096672166}
   - component: {fileID: 2096672168}
   - component: {fileID: 2096672167}
+  - component: {fileID: 2096672169}
   m_Layer: 5
   m_Name: Star (3)
   m_TagString: Untagged
@@ -5815,6 +5993,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096672165}
   m_CullTransparentMesh: 1
+--- !u!95 &2096672169
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096672165}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 427d37afd126f6543a69cedcce0d6115, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2097809650
 GameObject:
   m_ObjectHideFlags: 0
