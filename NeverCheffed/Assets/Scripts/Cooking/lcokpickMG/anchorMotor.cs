@@ -22,7 +22,6 @@ public class anchorMotor : MonoBehaviour
     public PlayerInput playerInput;
     public PlayerController PC;
     public GameObject Lock;
-    public bool doneCutting = false;
 
     public Transform theWholeThing;
     public SpriteRenderer bg;
@@ -40,8 +39,6 @@ public class anchorMotor : MonoBehaviour
         anchor = GameObject.FindGameObjectWithTag("anchor").transform;
         isRunning = true;
         Debug.Log("Start running");
-        Ticket = GameObject.FindGameObjectWithTag("Ticket").GetComponent<Ticket>();
-
     }
     // Update is called once per frame
     void Update()
@@ -143,8 +140,6 @@ public class anchorMotor : MonoBehaviour
         PC.frozen = false;
         Debug.Log("Dot fade");
         isRunning = false;
-
-        doneCutting = true;
     }
 }
 

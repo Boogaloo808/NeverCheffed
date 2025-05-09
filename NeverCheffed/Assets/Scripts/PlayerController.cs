@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
     public bool atCuttingStation = false;
     public bool UsingCuttingStation = false;
     FoodList FoodList;
-    public Ticket ticket;
 
     void Start()
     {
@@ -35,7 +34,6 @@ public class PlayerController : MonoBehaviour
         cam = FindAnyObjectByType<cameraManager>();
         walkSpeed = 25f;
         move = new Vector2();
-        ticket = GameObject.Find("Ticket").GetComponent<Ticket>();
         FoodList = GetComponent<FoodList>();
     }
 
@@ -125,7 +123,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("interact");
 
-            if ((atCuttingStation == true) && (ticket.haveIng))
+            if ((atCuttingStation == true))
             {
                 AM.startMG();
                 UsingCuttingStation = true;

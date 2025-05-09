@@ -3919,6 +3919,8 @@ MonoBehaviour:
   - {fileID: 3780233557811820888, guid: aff8b2ddbc2ecac47868f2bb99306e82, type: 3}
   - {fileID: 7958467707315342693, guid: c0dff4c078028cb428f13f8b26bd01a4, type: 3}
   - {fileID: 3058565261281141133, guid: b12f74cee9af06e4695bc66dcbca9418, type: 3}
+  - {fileID: 5364388790597417198, guid: 5df0cfed75620ed4eb8d097be66a09c2, type: 3}
+  - {fileID: 7230024743017092807, guid: 5be6dd296288df142b796dffa853e4ab, type: 3}
   recipes:
   - {fileID: 360053375012099440, guid: 5a2230df2d6cae947ae5825bfe466910, type: 3}
   - {fileID: 1787205167710213815, guid: 7db89e688f85b014ea216b28707bff00, type: 3}
@@ -4421,56 +4423,6 @@ RectTransform:
   m_AnchoredPosition: {x: 724, y: -25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1586957526
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1586957528}
-  - component: {fileID: 1586957527}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: GameManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1586957527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586957526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08bb4cdbda03c9f4c9eec6c527f589b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eggsAndBacon:
-  - Circle(Clone)
-  _eggsAndBacon: {fileID: 5713836995541860663, guid: 2773441258123ab47b5291149bf85a06, type: 3}
-  panSlot: {fileID: 2006461837}
-  pan: {fileID: 2006461838}
-  Cooked: 0
---- !u!4 &1586957528
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586957526}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.47032094, y: -0.46341416, z: 0.077668786}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696488117
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +4683,7 @@ MonoBehaviour:
   inRoom: 0
   atCuttingStation: 0
   UsingCuttingStation: 0
+  ticket: {fileID: 0}
 --- !u!61 &1696488121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5418,7 +5371,7 @@ MonoBehaviour:
   FFT: {fileID: 134458104}
   counter: {fileID: 1045138898}
   panCollider: {fileID: 2006461839}
-  manager: {fileID: 1586957527}
+  manager: {fileID: 0}
 --- !u!61 &2006461839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6378,7 +6331,6 @@ SceneRoots:
   - {fileID: 8876195226188872988}
   - {fileID: 1696488118}
   - {fileID: 1367559055}
-  - {fileID: 1586957528}
   - {fileID: 1045138902}
   - {fileID: 647440324}
   - {fileID: 1453091066}
