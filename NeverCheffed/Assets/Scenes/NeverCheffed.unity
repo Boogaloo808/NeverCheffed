@@ -1664,7 +1664,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -5.8158956, y: -0.04357767}
+  m_Offset: {x: -5.6496315, y: -0.04357767}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1674,7 +1674,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.95294094, y: 9.977027}
+  m_Size: {x: 1.0954533, y: 9.977027}
   m_EdgeRadius: 0
 --- !u!1 &431781619
 GameObject:
@@ -2688,7 +2688,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.6960487, y: 1.1296473}
+  m_Offset: {x: 3.1733675, y: 1.1296473}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2698,7 +2698,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0849819, y: 9.9687195}
+  m_Size: {x: 0.7431984, y: 9.9687195}
   m_EdgeRadius: 0
 --- !u!1 &807082692
 GameObject:
@@ -2950,7 +2950,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -13.682697, y: -0.6914673}
+  m_Offset: {x: -14.3262415, y: -0.6914673}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2960,7 +2960,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2095833, y: 9.926214}
+  m_Size: {x: 1.0453892, y: 9.926214}
   m_EdgeRadius: 0
 --- !u!1 &1045138897
 GameObject:
@@ -3131,7 +3131,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1998612620}
   - {fileID: 107019966}
   - {fileID: 1419985119}
   - {fileID: 1972408089}
@@ -3812,9 +3811,9 @@ MonoBehaviour:
     - use (SPACE) to get your order from the window while standing next to it
     - use (SPACE) to turn on food dropping as indicated by the red alarm at the top
     - the food you catch is shown at the bottom of the screen
-    - the current order will be shown in the top left corner after you interact with
-      the window
-    - in the top right is your star value if it reaches 0 you lose but if you reach
+    - the current order will be shown in the top right corner after you interact
+      with the window
+    - in the top left is your star value if it reaches 0 you lose but if you reach
       five then you'll win
     - now your ready to start cooking, have fun
 --- !u!114 &1337531837
@@ -4677,13 +4676,13 @@ MonoBehaviour:
   usingfryMap: 0
   frozen: 0
   walkSpeed: 15
+  walkNorm: 0
   move: {x: 0, y: 0}
   inputX: 0
   activated: 0
   inRoom: 0
   atCuttingStation: 0
   UsingCuttingStation: 0
-  ticket: {fileID: 0}
 --- !u!61 &1696488121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5270,56 +5269,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1998612619
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1998612620}
-  - component: {fileID: 1998612621}
-  m_Layer: 0
-  m_Name: staramanager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1998612620
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998612619}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.513848, y: -210.12857, z: -2.428412}
-  m_LocalScale: {x: 0.2083333, y: 0.2083333, z: 0.2083333}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1070394962}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1998612621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998612619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1571e44a35c084bb2ff612e2764b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  star1: {fileID: 107019969}
-  star2: {fileID: 1419985122}
-  star3: {fileID: 1972408092}
-  star4: {fileID: 2096672169}
-  star5: {fileID: 255567174}
-  starVal: 0.5
 --- !u!1 &2006461836
 GameObject:
   m_ObjectHideFlags: 0

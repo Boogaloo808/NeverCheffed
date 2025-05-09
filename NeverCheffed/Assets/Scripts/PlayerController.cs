@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public bool frozen = false;
 
     public float walkSpeed;
+    public float walkNorm;
     public Vector2 move;
     public float inputX;
     float inputHorizontal;
@@ -32,7 +33,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         cam = FindAnyObjectByType<cameraManager>();
-        walkSpeed = 25f;
+        walkSpeed = 18f;
+        walkNorm = 10f;
         move = new Vector2();
         FoodList = GetComponent<FoodList>();
     }
@@ -53,7 +55,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            walkSpeed = 25f;
+            walkSpeed = walkNorm;
         }
 
 
