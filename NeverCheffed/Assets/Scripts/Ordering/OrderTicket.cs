@@ -1,5 +1,4 @@
 using System.Collections.Concurrent;
-using UnityEditor.Build;
 using UnityEngine;
 
 public class OrderTicket : MonoBehaviour
@@ -8,6 +7,7 @@ public class OrderTicket : MonoBehaviour
     private int rand;
 
     public bool ordered = false;
+    public bool haveOrder = false;
     void Start()
     {
         foodlist = GameObject.FindGameObjectWithTag("list of food").GetComponent<FoodList>();
@@ -15,15 +15,15 @@ public class OrderTicket : MonoBehaviour
 
     void Update()
     {
-        if (ordered == true)
+        rand = Random.Range(0, foodlist.recipes.Length);
+        if (ordered == true && haveOrder == false)
         {
-            rand = Random.Range(0, foodlist.recipes.Length);
-            //Instantiate(foodlist.recipes[rand], transform.position + Vector3.right, foodlist.recipes[rand].transform.rotation);
-            Instantiate(foodlist.recipes[rand], Vector3.zero, Quaternion.identity);
-
+                Instantiate(foodlist.recipes[rand], Vector3.zero, Quaternion.identity);
+            haveOrder = true;
+        }
+        else
+        {
             ordered = false;
         }
     }
-
-
 }

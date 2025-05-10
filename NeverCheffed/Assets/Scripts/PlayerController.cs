@@ -8,36 +8,40 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     cameraManager cam;
     public Transform cuttingboard;
+    public anchorMotor AM;
 
     public PlayerInput playerinput;
 
-    public bool usingPlayerAction = true;
     public bool usingChopMap = false;
     public bool usingcookMap = false;
     public bool usingfryMap = false;
 
+    public bool frozen = false;
+
     public float walkSpeed;
+    public float walkNorm;
     public Vector2 move;
     public float inputX;
     float inputHorizontal;
     public bool activated = false;
     public bool inRoom = false;
     public bool atCuttingStation = false;
+    public bool UsingCuttingStation = false;
     FoodList FoodList;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         cam = FindAnyObjectByType<cameraManager>();
-        walkSpeed = 25f;
+        walkSpeed = 18f;
+        walkNorm = 10f;
         move = new Vector2();
-        //playerinput.SwitchCurrentActionMap("Player");
-
         FoodList = GetComponent<FoodList>();
     }
 
     void Update()
     {
+
         move.x = inputX;
         if (move == Vector2.zero)
         {
@@ -45,16 +49,29 @@ public class PlayerController : MonoBehaviour
         }
         rb.AddForce(move * walkSpeed);
 
-        if (Input.GetKeyDown(KeyCode.Space) && activated == false && inRoom == true)
+        if (frozen)
+        {
+            walkSpeed = 0f;
+        }
+        else
+        {
+            walkSpeed = walkNorm;
+        }
+
+
+    }
+
+    public void ActivateAlarm(InputAction.CallbackContext Context)
+    {
+        if (activated == false && inRoom == true)
         {
             activated = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && activated == true)
+        else if (activated == true)
         {
             activated = false;
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.name)
@@ -78,6 +95,7 @@ public class PlayerController : MonoBehaviour
             case "cuttingboard":
                 atCuttingStation = true;
                 Debug.Log("At cutting Station");
+
                 break;
             default:
                 break;
@@ -95,15 +113,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void activateCutting()
-    {
-        if (atCuttingStation)
-        {
-            rb.transform.SetPositionAndRotation(cuttingboard.position, Quaternion.identity);
-            switchController();
-
-        }
-    }
 
     public void playerMove(InputAction.CallbackContext Context)
     {
@@ -115,23 +124,16 @@ public class PlayerController : MonoBehaviour
         if (Context.started)
         {
             Debug.Log("interact");
-            activateCutting();
+
+            if ((atCuttingStation == true))
+            {
+                AM.startMG();
+                UsingCuttingStation = true;
+                frozen = true;
+            }
         }
     }
 
-    public void switchController()
-    {
-        if (usingPlayerAction)
-        {
-            playerinput.SwitchCurrentActionMap("ChopMG");
-            usingPlayerAction = false;
-        }
-        else
-        {
-            playerinput.SwitchCurrentActionMap("Player");
-            usingPlayerAction = true;
-        }
-    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {

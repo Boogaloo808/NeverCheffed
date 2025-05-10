@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 43197e0442330c7408dabb7921fcedb0
+guid: d21ac49df1eed19479e18f0155df6b44
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Tomatos_0: 3675063779354177482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

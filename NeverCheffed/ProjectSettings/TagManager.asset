@@ -16,7 +16,6 @@ TagManager:
   - Meat
   - Egg
   - Rice
-  - Flour
   - Spice
   - Bread
   - FridgeRoomSpawn
@@ -24,6 +23,10 @@ TagManager:
   - UI
   - OTT
   - Ticket
+  - panSlot
+  - Undefined
+  - Veggie
+  - CuttingBoard
   layers:
   - Default
   - TransparentFX

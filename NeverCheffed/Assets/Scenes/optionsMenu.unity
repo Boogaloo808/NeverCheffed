@@ -3373,7 +3373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3783,15 +3783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ee349bcc5cb5d44afa420d8bcea316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicSlider: {fileID: 1285778698}
-  SoundSlider: {fileID: 232931917}
-  musicMixer: {fileID: 24100000, guid: e5ee51f704f298c40a9e49aa84ee44d7, type: 2}
-  soundMixer: {fileID: 24100000, guid: 20c2d93fd4b37d04b98b3ad1c43f0e0f, type: 2}
-  MusVol: {fileID: 1153207649}
-  SonVol: {fileID: 1573434522}
   bgMusic: {fileID: 590014729}
-  SoundEffect: {fileID: 1474230698}
-  isSoundPlaying: 0
 --- !u!4 &2137930230
 Transform:
   m_ObjectHideFlags: 0

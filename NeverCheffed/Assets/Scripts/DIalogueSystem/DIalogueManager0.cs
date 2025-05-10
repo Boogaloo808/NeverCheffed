@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
 
 
     private Queue<string> sentences;
-
+    public bool talking = false;
 
     // Update is called once per frame
     void Start()
@@ -50,11 +50,14 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        Ayanimator.SetBool("startsTalking", true);
-        StartCoroutine(TypeSentence(sentence));
-        
+        if (talking == false)
+        {
+            string sentence = sentences.Dequeue();
+            StopAllCoroutines();
+            Ayanimator.SetBool("startsTalking", true);
+            StartCoroutine(TypeSentence(sentence));
+            talking = true;
+        }
         
     }
 
@@ -70,6 +73,7 @@ public class DialogueManager : MonoBehaviour
 
         }
         Ayanimator.SetBool("startsTalking", false);
+        talking = false;
     }
 
     void EndDialogue()
