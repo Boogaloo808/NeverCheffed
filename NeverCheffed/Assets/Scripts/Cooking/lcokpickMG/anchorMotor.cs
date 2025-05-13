@@ -15,13 +15,15 @@ public class anchorMotor : MonoBehaviour
     Direction direction = Direction.clockwise;
 
     Transform anchor;
-    GameObject currentDot;
+    public GameObject currentDot;
     [SerializeField]bool isRunning = false;
     public int number;
     public TMPro.TextMeshPro text;
     public PlayerInput playerInput;
     public PlayerController PC;
     public GameObject Lock;
+    public Ticket ticket;
+    public bool cooked = false;
 
     public Transform theWholeThing;
     public SpriteRenderer bg;
@@ -56,16 +58,6 @@ public class anchorMotor : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        currentDot = other.gameObject;
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        currentDot = null;
-    }
-
 
     void ChangeDirection()
     {
@@ -78,6 +70,16 @@ public class anchorMotor : MonoBehaviour
                 direction = Direction.clockwise;
                 break;
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        currentDot = other.gameObject;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        currentDot = null;
     }
 
     public void Press(InputAction.CallbackContext context)
@@ -95,8 +97,7 @@ public class anchorMotor : MonoBehaviour
             {
                 sound.clip = hit;
                 sound.Play();
-                currentDot.transform.position = Random.insideUnitCircle.normalized * 1.65f;
-                currentDot.transform.position =  new Vector2(currentDot.transform.position.x + 0.09f, currentDot.transform.position.y + 1.05f);
+                currentDot.transform.position = Random.insideUnitCircle.normalized * 1f;
                 number--;
                 if (number <= 0)
                 {
@@ -140,6 +141,7 @@ public class anchorMotor : MonoBehaviour
         PC.frozen = false;
         Debug.Log("Dot fade");
         isRunning = false;
+        cooked = true;
     }
 }
 

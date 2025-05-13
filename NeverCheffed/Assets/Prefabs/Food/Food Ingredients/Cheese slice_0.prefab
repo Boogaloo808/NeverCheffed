@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1706517706631778758}
   - component: {fileID: 3504287177418422958}
   - component: {fileID: 1978320084295779822}
+  - component: {fileID: -6142499540068341246}
   m_Layer: 0
   m_Name: Cheese slice_0
   m_TagString: Cheese
@@ -175,3 +176,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50313a9641247064899ab2c41a5254d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6142499540068341246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785243579069099302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 0.9502357, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

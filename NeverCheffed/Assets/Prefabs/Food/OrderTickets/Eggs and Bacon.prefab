@@ -95,7 +95,8 @@ MonoBehaviour:
   FoodCount: {fileID: 0}
   OrderTicket: {fileID: 0}
   panSlot: {fileID: 0}
-  anchorMotor: {fileID: 0}
+  AMtoTicket: {fileID: 0}
+  am: {fileID: 0}
   haveIng: 0
   _FinishedFood: {fileID: 5713836995541860663, guid: 2773441258123ab47b5291149bf85a06, type: 3}
 --- !u!61 &-7719915779379200825
@@ -187,6 +188,7 @@ MonoBehaviour:
   FoodCount: {fileID: 0}
   OrderTicket: {fileID: 0}
   panSlot: {fileID: 0}
-  anchorMotor: {fileID: 0}
+  AMtoTicket: {fileID: 0}
+  am: {fileID: 0}
   haveIng: 0
   _FinishedFood: {fileID: 0}

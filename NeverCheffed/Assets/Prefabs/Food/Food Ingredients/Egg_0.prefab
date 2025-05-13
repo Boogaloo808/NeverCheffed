@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8540002214532794910}
   - component: {fileID: 3244867243862822479}
   - component: {fileID: 2457676987931645013}
+  - component: {fileID: -2120450248098679331}
   m_Layer: 0
   m_Name: Egg_0
   m_TagString: Egg
@@ -165,3 +166,18 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.7099999
+--- !u!114 &-2120450248098679331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308675845443519442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 0.9502357, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

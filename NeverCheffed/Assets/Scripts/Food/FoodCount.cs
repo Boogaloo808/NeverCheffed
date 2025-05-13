@@ -12,6 +12,8 @@ public class FoodCount : MonoBehaviour
     public TMPro.TextMeshProUGUI SpiceText;
     public TMPro.TextMeshProUGUI BreadText;
 
+    public GameObject cameraaaa;
+
     public int CheeseNumber = 0;
     public int MilkNumber = 0;
     public int MeatNumber = 0;
@@ -20,6 +22,7 @@ public class FoodCount : MonoBehaviour
     public int VeggieNumber = 0;
     public int SpiceNumber = 0;
     public int BreadNumber = 0;
+
 
     void Update()
     {
