@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lettuce (1)_0: 5922460323499874904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
