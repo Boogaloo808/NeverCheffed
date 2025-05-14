@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7723669744490375632}
   - component: {fileID: 7054111300585596816}
   m_Layer: 5
-  m_Name: Salmon Nigiri
+  m_Name: Pizza
   m_TagString: Ticket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1918397593679331674, guid: 8aaf06b31b94a1a44a5fe9bf4a13e34f, type: 3}
+  m_Sprite: {fileID: -5905730463118220485, guid: 91c5c39dcec763f478d81c86d98a6142, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -89,13 +89,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131d51b0ae8c8584193ac84b1a580a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ticketNumber: 3
+  ticketNumber: 4
   FoodCount: {fileID: 0}
   OrderTicket: {fileID: 0}
   panSlot: {fileID: 0}
   am: {fileID: 0}
   haveIng: 0
-  _FinishedFood: {fileID: 2580506289396022613, guid: f6c415113947ca04b9759ac9f4411f36, type: 3}
+  _FinishedFood: {fileID: 3157541657313986507}
 --- !u!61 &7054111300585596816
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -19,7 +19,6 @@ public class Ticket : MonoBehaviour
         FoodCount = GameObject.Find("UI").GetComponent<FoodCount>();
         OrderTicket = GameObject.FindGameObjectWithTag("OTT").GetComponent<OrderTicket>();
         panSlot = GameObject.Find("panSlot").GetComponent<Transform>();
-        am = GameObject.Find("AM to Ticket").GetComponent<AMtoTicket>().AM;
     }
 
     void Update()
@@ -28,7 +27,7 @@ public class Ticket : MonoBehaviour
 
         
 
-        if (ticketNumber == 0 && (FoodCount.EggNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2) && am.cooked)
+        if (ticketNumber == 0 && (FoodCount.EggNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2))
         {
                 Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
@@ -42,7 +41,7 @@ public class Ticket : MonoBehaviour
 
             Debug.Log("ITS COOOKING");
         }
-        else if (ticketNumber == 1 && (FoodCount.CheeseNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.BreadNumber >= 1) && (FoodCount.VeggieNumber >= 2) && am.cooked)
+        else if (ticketNumber == 1 && (FoodCount.CheeseNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.BreadNumber >= 1) && (FoodCount.VeggieNumber >= 2))
         {
             Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
@@ -57,7 +56,7 @@ public class Ticket : MonoBehaviour
 
             Debug.Log("ITS COOOKING");
         }
-        else if (ticketNumber == 2 && (FoodCount.BreadNumber >= 1f) && (FoodCount.CheeseNumber >= 1f) && am.cooked)
+        else if (ticketNumber == 2 && (FoodCount.BreadNumber >= 1f) && (FoodCount.CheeseNumber >= 1f))
         {
             Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
@@ -70,7 +69,7 @@ public class Ticket : MonoBehaviour
 
             Debug.Log("ITS COOOKING");
         }
-        else if (ticketNumber == 3 && (FoodCount.RiceNumber >= 1) && (FoodCount.MeatNumber >= 1f) && am.cooked)
+        else if (ticketNumber == 3 && (FoodCount.RiceNumber >= 1) && (FoodCount.MeatNumber >= 1f))
         {
             Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
@@ -78,6 +77,19 @@ public class Ticket : MonoBehaviour
 
             FoodCount.RiceNumber -= 1;
             FoodCount.MeatNumber -= 1;
+
+            Destroy(gameObject);
+
+            Debug.Log("ITS COOOKING");
+        }
+        else if (ticketNumber == 4 && (FoodCount.CheeseNumber >= 1) && (FoodCount.VeggieNumber >= 2f))
+        {
+            Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
+
+            OrderTicket.haveOrder = false;
+
+            FoodCount.CheeseNumber -= 1;
+            FoodCount.VeggieNumber -= 2;
 
             Destroy(gameObject);
 
