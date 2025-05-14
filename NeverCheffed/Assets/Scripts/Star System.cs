@@ -3,7 +3,7 @@ using UnityEngine;
 public class StarSystem : MonoBehaviour
 {
     public Animator star1, star2, star3, star4, star5;
-    public float starVal = 0.5f;
+    public starManager SM;
 
     void Start()
     {
@@ -16,10 +16,10 @@ public class StarSystem : MonoBehaviour
 
     void Update()
     {
-        star1.SetFloat("starValue", starVal);
-        star2.SetFloat("starValue", starVal);
-        star3.SetFloat("starValue", starVal);
-        star4.SetFloat("starValue", starVal);
-        star5.SetFloat("starValue", starVal);
+        star1.SetFloat("starValue", SM.starVal);
+        star2.SetFloat("starValue", SM.starVal);
+        star3.SetFloat("starValue", SM.starVal);
+        star4.SetFloat("starValue", SM.starVal);
+        star5.SetFloat("starValue", SM.starVal);
     }
 }
