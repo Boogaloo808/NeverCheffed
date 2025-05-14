@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7506868225877991990}
   - component: {fileID: 8912591410891862367}
   - component: {fileID: -4430906147954819227}
-  - component: {fileID: 4391514789005278066}
   m_Layer: 0
   m_Name: Lamb (Raw) (1)_0
   m_TagString: Meat
@@ -176,18 +175,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50313a9641247064899ab2c41a5254d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4391514789005278066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7386836151443074880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 0.9502357, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
-  m_UseGraphicAlpha: 1

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d21ac49df1eed19479e18f0155df6b44
+guid: 887cff4e4177dd74ca9eaaeae2be8222
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3675063779354177482
-    second: Tomatos_0
+      213: 7048376694602945912
+    second: Burger Order ticket (Remake)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tomatos_0
+      name: Burger Order ticket (Remake)_0
       rect:
         serializedVersion: 2
-        x: 209
-        y: 229
-        width: 172
-        height: 162
+        x: 99
+        y: 39
+        width: 312
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acf6f473903700330800000000000000
-      internalID: 3675063779354177482
+      spriteID: 87553f4824dd0d160800000000000000
+      internalID: 7048376694602945912
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Tomatos_0: 3675063779354177482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

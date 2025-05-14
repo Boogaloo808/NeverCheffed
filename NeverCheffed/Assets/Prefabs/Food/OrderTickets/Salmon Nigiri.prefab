@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4876339494065353067, guid: 66a5e037557604a48861a52abf992495, type: 3}
+  m_Sprite: {fileID: -1918397593679331674, guid: b4ef52e00f19a804bbe646a4dd4c1b72, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93,7 +93,7 @@ MonoBehaviour:
   FoodCount: {fileID: 0}
   OrderTicket: {fileID: 0}
   panSlot: {fileID: 0}
-  anchorMotor: {fileID: 0}
+  am: {fileID: 0}
   haveIng: 0
   _FinishedFood: {fileID: 2580506289396022613, guid: f6c415113947ca04b9759ac9f4411f36, type: 3}
 --- !u!61 &7054111300585596816

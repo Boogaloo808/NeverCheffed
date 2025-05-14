@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d21ac49df1eed19479e18f0155df6b44
+guid: b4ef52e00f19a804bbe646a4dd4c1b72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3675063779354177482
-    second: Tomatos_0
+      213: -1918397593679331674
+    second: Salmon Nigiri Order ticket (Remake)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tomatos_0
+      name: Salmon Nigiri Order ticket (Remake)_0
       rect:
         serializedVersion: 2
-        x: 209
-        y: 229
-        width: 172
-        height: 162
+        x: 99
+        y: 39
+        width: 312
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acf6f473903700330800000000000000
-      internalID: 3675063779354177482
+      spriteID: 6ae77ca7d8b7065e0800000000000000
+      internalID: -1918397593679331674
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Tomatos_0: 3675063779354177482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
