@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4695969657075711769}
   - component: {fileID: 8558071884713628994}
   - component: {fileID: 4670249115197213607}
+  - component: {fileID: -4739896567791421088}
   m_Layer: 0
   m_Name: gRILLED cHESSE (1)_0
   m_TagString: Untagged
@@ -100,3 +101,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50313a9641247064899ab2c41a5254d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &-4739896567791421088
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3274595159799365388}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
