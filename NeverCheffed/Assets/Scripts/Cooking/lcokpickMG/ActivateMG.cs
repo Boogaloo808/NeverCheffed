@@ -35,7 +35,7 @@ public class ActivateMG : MonoBehaviour
         else
         {
             StartCoroutine(WaitTime());
-            Lock.SetActive(false);
+
             startedMG = false;
 
         }

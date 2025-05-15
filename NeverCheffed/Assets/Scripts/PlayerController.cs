@@ -8,15 +8,12 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     cameraManager cam;
     public Transform cuttingboard;
-    public anchorMotor AM;
-
     public PlayerInput playerinput;
 
     public bool usingChopMap = false;
     public bool usingcookMap = false;
     public bool usingfryMap = false;
 
-    public bool frozen = false;
 
     public float walkSpeed;
     public float walkNorm;
@@ -34,7 +31,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cam = FindAnyObjectByType<cameraManager>();
         walkSpeed = 18f;
-        walkNorm = 10f;
         move = new Vector2();
         FoodList = GetComponent<FoodList>();
     }
@@ -48,15 +44,6 @@ public class PlayerController : MonoBehaviour
             rb.velocity *= 0.96f;
         }
         rb.AddForce(move * walkSpeed);
-
-        if (frozen)
-        {
-            walkSpeed = 0f;
-        }
-        else
-        {
-            walkSpeed = walkNorm;
-        }
 
 
     }
@@ -116,7 +103,7 @@ public class PlayerController : MonoBehaviour
 
     public void playerMove(InputAction.CallbackContext Context)
     {
-        inputX = Context.ReadValue<Vector2>().x;
+        inputX = Context.ReadValue<Vector2>().y;
     }
 
     public void playerInteract(InputAction.CallbackContext Context)
@@ -127,9 +114,7 @@ public class PlayerController : MonoBehaviour
 
             if ((atCuttingStation == true))
             {
-                AM.startMG();
                 UsingCuttingStation = true;
-                frozen = true;
             }
         }
     }

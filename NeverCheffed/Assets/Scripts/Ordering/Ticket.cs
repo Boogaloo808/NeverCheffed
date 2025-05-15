@@ -10,6 +10,7 @@ public class Ticket : MonoBehaviour
     public OrderTicket OrderTicket;
     public Transform panSlot;
     public anchorMotor am;
+    public starManager SM;
 
     public bool haveIng = false;
 
@@ -19,6 +20,8 @@ public class Ticket : MonoBehaviour
         FoodCount = GameObject.Find("UI").GetComponent<FoodCount>();
         OrderTicket = GameObject.FindGameObjectWithTag("OTT").GetComponent<OrderTicket>();
         panSlot = GameObject.Find("panSlot").GetComponent<Transform>();
+        SM = GameObject.Find("starManager").GetComponent<starManager>();
+        SM.starVal = 0.5f;
     }
 
     void Update()
@@ -27,7 +30,7 @@ public class Ticket : MonoBehaviour
 
         
 
-        if (ticketNumber == 0 && (FoodCount.EggNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 2))
+        if (ticketNumber == 0 && (FoodCount.EggNumber >= 1f) && (FoodCount.MeatNumber >= 1f) && (FoodCount.SpiceNumber >= 1))
         {
                 Instantiate(_FinishedFood, panSlot.transform.position, _FinishedFood.transform.rotation);
 
@@ -36,7 +39,7 @@ public class Ticket : MonoBehaviour
                 FoodCount.EggNumber -= 1;
                 FoodCount.MeatNumber -= 1;
                 FoodCount.SpiceNumber -= 2;
-
+                SM.starVal += 0.2f;
                 Destroy(gameObject);
 
             Debug.Log("ITS COOOKING");
@@ -51,7 +54,7 @@ public class Ticket : MonoBehaviour
             FoodCount.MeatNumber -= 1;
             FoodCount.BreadNumber -= 1;
             FoodCount.VeggieNumber -= 2;
-
+            SM.starVal += 0.2f;
             Destroy(gameObject);
 
             Debug.Log("ITS COOOKING");
@@ -64,7 +67,7 @@ public class Ticket : MonoBehaviour
 
             FoodCount.BreadNumber -= 1;
             FoodCount.CheeseNumber -= 1;
-
+            SM.starVal += 0.2f;
             Destroy(gameObject);
 
             Debug.Log("ITS COOOKING");
@@ -77,7 +80,7 @@ public class Ticket : MonoBehaviour
 
             FoodCount.RiceNumber -= 1;
             FoodCount.MeatNumber -= 1;
-
+            SM.starVal += 0.2f;
             Destroy(gameObject);
 
             Debug.Log("ITS COOOKING");
@@ -90,7 +93,7 @@ public class Ticket : MonoBehaviour
 
             FoodCount.CheeseNumber -= 1;
             FoodCount.VeggieNumber -= 2;
-
+            SM.starVal += 0.2f;
             Destroy(gameObject);
 
             Debug.Log("ITS COOOKING");

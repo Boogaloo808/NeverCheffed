@@ -138,7 +138,6 @@ public class anchorMotor : MonoBehaviour
         }
 
         PC.UsingCuttingStation = false;
-        PC.frozen = false;
         Debug.Log("Dot fade");
         isRunning = false;
         cooked = true;

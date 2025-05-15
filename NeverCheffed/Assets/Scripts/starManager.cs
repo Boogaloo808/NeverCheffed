@@ -1,7 +1,4 @@
 using UnityEngine;
-using UnityEditor.UIElements;
-using UnityEditor.UI;
-using TMPro;
 
 public class starManager : MonoBehaviour
 {
